@@ -27,4 +27,10 @@ python tools/atlas_search_v10.py "Pearl Harbor" --kind source --json
 
 The GOES file is one rolling six-hour capture, not a continuous archive. Physical quantities and time supports differ. No interpolation, event causality, nowcast, or forecast is claimed. Search is lexical over bundled metadata and selected Markdown; it does not crawl remote pages, index PDF full text, or answer with an LLM.
 
-The requested public GitHub name is SIGNAL-ATLAS. Public creation is authorized but pending because current connected GitHub tools cannot create a repository. Artifacts should remain in the persistent SIGNAL ATLAS Library with earlier versions.
+The public repository is [SIGNAL-ATLAS](https://github.com/jacksonjp0311-gif/SIGNAL-ATLAS). The original v1.0 archive and earlier versions remain preserved in the persistent SIGNAL ATLAS Library; repository publication does not replace those historical archives.
+
+## Repository source compatibility update
+
+The current source excludes .git directories and linked-worktree pointer files consistently from lineage, validation, and ZIP packaging while retaining .github project files. Two focused packaging regressions cover both Git layouts. The user-created MIT LICENSE is preserved for project-owned material; existing third-party source rights flags remain attached.
+
+The frozen datasets and evergreen logo retain their original bytes. The historical SIGNAL-ATLAS-v1.0.zip remains unchanged with SHA-256 c4b67b17eb87e6fca5e9ad8d0b3075c2bb178ad4e0c87bdc05c52f9a941b892d. The current repository source and any separately named source ZIP include this compatibility fix.

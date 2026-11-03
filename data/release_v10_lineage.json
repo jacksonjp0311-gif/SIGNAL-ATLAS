@@ -1,5 +1,6 @@
 {
   "added_paths": [
+    "LICENSE",
     "assets/unified_atlas_navigation_v10.svg",
     "courses/29-public-sigint-history.md",
     "courses/30-compile-observations-and-provenance.md",
@@ -28,11 +29,13 @@
     "tools/build_v10.py",
     "tools/create_packet_v10.py",
     "tools/fetch_goes_xray_v1.py",
+    "tools/release_files.py",
     "tools/validate_v10.py"
   ],
   "allowed_changed_paths": [
     "AGENTS.md",
     "CHANGELOG.md",
+    "LICENSE-DECISIONS.md",
     "README.md",
     "START-HERE.md",
     "THREAD-RESUME-HANDOFF.md",
@@ -1176,15 +1179,19 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "4306334bf8a0aa487883075b10c177a201e1318b7cce6deba39db3dcf18ac4e3"
+      "sha256": "09fd4abdbd00450f351c86abb0b6f1e1caf9fa08c98c83d1d0d8950006843a36"
     },
     {
       "path": "CONTRIBUTING.md",
       "sha256": "8d4ede98550db77f4b64edde648a27486ba5cf3d0962e8b3ab68f2a37feac53d"
     },
     {
+      "path": "LICENSE",
+      "sha256": "ecd5b1eac577b0050565b9000ad8277ae4e0eb8727ee697663b6dc046ac5d8a7"
+    },
+    {
       "path": "LICENSE-DECISIONS.md",
-      "sha256": "37dfc148c5859dba4fa5ad0d49d5f7b63e85c937bf7a25c54b820d4b5ebee91a"
+      "sha256": "b4c95c529daef720391e64a60ea24aa0a01f3623a6a6d229145784940f9da66e"
     },
     {
       "path": "README.md",
@@ -1204,7 +1211,7 @@
     },
     {
       "path": "THREAD-RESUME-HANDOFF.md",
-      "sha256": "7d30a8d0a8a7806882c834017f06f3ebe862ff3cc48df7396c8bdcc7ec3f1ae2"
+      "sha256": "2f8c14aaaa66f60fd341fdf38b84149e92777f698aeab8543b9cc4d7d6a19aef"
     },
     {
       "path": "assets/README.md",
@@ -1964,7 +1971,7 @@
     },
     {
       "path": "docs/research/RELEASE_SUMMARY_v10.md",
-      "sha256": "519d1178eead166b4ac31ddaa7725fcfc7371982079465b695f249f18b6a59b5"
+      "sha256": "17634e7dc6428052619f7eeec97e690410bc11fdc7832b24ce5dcfba65220938"
     },
     {
       "path": "docs/research/RESEARCH_AMORTIZATION.md",
@@ -2276,7 +2283,7 @@
     },
     {
       "path": "tests/test_v10_atlas.py",
-      "sha256": "145c751258d1d0f264b4195f81f9277ab8f167ed01b0f0f9e54be2cd906cb8c1"
+      "sha256": "77b3b7c063dddd43bd2505ba35808e6a49d48cec774370e8b6ecc893a4040f13"
     },
     {
       "path": "tools/atlas_index_query.py",
@@ -2316,7 +2323,7 @@
     },
     {
       "path": "tools/build_v10.py",
-      "sha256": "802d21db2d30d6f65d6975e4adc006dbd2c011c7542177807c9d4dd0783d9ff3"
+      "sha256": "3e0975dc04142c2d201b79c01192323c31e28bf34aa92a56e034fccb76eb3489"
     },
     {
       "path": "tools/create_packet_v10.py",
@@ -2356,7 +2363,11 @@
     },
     {
       "path": "tools/release.py",
-      "sha256": "9dc33b02f2c470e98047b8b87225e8e332a018dc65a1c3af9f62337157ac8928"
+      "sha256": "5a4c26d0e2ddff413b66f72600dfed25bd2a2b70cb74b43273c796a5d0a710c4"
+    },
+    {
+      "path": "tools/release_files.py",
+      "sha256": "a662f6d481b42474ab1f262a95d9580e49764fb52248fcec8d00752f4fe10c25"
     },
     {
       "path": "tools/science_search.py",
@@ -2392,8 +2403,8 @@
     },
     {
       "path": "tools/validate_v10.py",
-      "sha256": "87ec412808a929a8c8a873122f28ed42f9ef34313093e74d70bd0d7a50a37432"
+      "sha256": "95fdf5ac5b19ae86dea4fc9c71c231abbc1f37a7c9ca73646bb1f86d6bdf68d7"
     }
   ],
-  "release_entry_count": 306
+  "release_entry_count": 308
 }

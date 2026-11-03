@@ -55,5 +55,51 @@ class UnifiedSearchTests(unittest.TestCase):
         self.assertEqual(index_hash, packet["inputs"]["index_sha256"])
 
 
+class GitCheckoutPackagingTests(unittest.TestCase):
+    def assert_metadata_is_excluded(self, worktree_pointer):
+        import contextlib
+        import io
+        import tempfile
+        import zipfile
+        from unittest.mock import patch
+        import release
+
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary) / "project"
+            root.mkdir()
+            (root / "README.md").write_text("# Project\n", encoding="utf-8")
+            workflow = root / ".github" / "workflows" / "check.yml"
+            workflow.parent.mkdir(parents=True)
+            workflow.write_text("name: check\n", encoding="utf-8")
+            cache = root / "tools" / "__pycache__" / "module.pyc"
+            cache.parent.mkdir(parents=True)
+            cache.write_bytes(b"generated cache")
+            git = root / ".git"
+            if worktree_pointer:
+                git.write_text("gitdir: /private/local/worktrees/project\n", encoding="utf-8")
+            else:
+                (git / "objects").mkdir(parents=True)
+                (git / "config").write_text("local metadata must not ship\n", encoding="utf-8")
+                (git / "objects" / "sentinel").write_bytes(b"unrelated repository object")
+            output = Path(temporary) / "release.zip"
+            with patch.object(release, "ROOT", root), patch.object(release, "run"), patch.object(sys, "argv", ["release.py", "--output", str(output)]), contextlib.redirect_stdout(io.StringIO()):
+                release.main()
+            with zipfile.ZipFile(output) as archive:
+                self.assertEqual({"SIGNAL-ATLAS/README.md", "SIGNAL-ATLAS/.github/workflows/check.yml", "SIGNAL-ATLAS/MANIFEST.sha256"}, set(archive.namelist()))
+                manifest = archive.read("SIGNAL-ATLAS/MANIFEST.sha256").decode("utf-8")
+                self.assertNotIn(".git/", manifest)
+                self.assertNotIn("__pycache__", manifest)
+                self.assertIn(".github/workflows/check.yml", manifest)
+                for line in manifest.splitlines():
+                    digest, path = line.split("  ", 1)
+                    self.assertEqual(digest, hashlib.sha256(archive.read("SIGNAL-ATLAS/" + path)).hexdigest())
+
+    def test_git_directory_is_not_packaged(self):
+        self.assert_metadata_is_excluded(worktree_pointer=False)
+
+    def test_git_worktree_pointer_is_not_packaged(self):
+        self.assert_metadata_is_excluded(worktree_pointer=True)
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -9,6 +9,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/"tools"))
 from build_v10 import pair_rows, canon
+from release_files import iter_release_files
 
 errors=[]
 def check(ok,message):
@@ -125,7 +126,7 @@ if lineage:
         f=ROOT/path
         check(f.is_file(),f"inherited v0.8 path missing: {path}")
         if f.is_file() and sha(f)!=digest:check(path in allowed,f"undeclared v0.8 file change: {path}")
-    current={p.relative_to(ROOT).as_posix() for p in ROOT.rglob("*") if p.is_file() and p.name not in {"MANIFEST.sha256","release_v10_lineage.json"} and "__pycache__" not in p.parts}
+    current={p.relative_to(ROOT).as_posix() for p in iter_release_files(ROOT) if p.name not in {"MANIFEST.sha256","release_v10_lineage.json"}}
     actual_added=(current-set(base))|{"data/release_v10_lineage.json"}
     check(actual_added==set(lineage.get("added_paths",[])),"added release paths differ from lineage inventory")
     release_entries={x["path"]:x["sha256"] for x in lineage.get("release_entries",[])}

@@ -9,6 +9,8 @@ import sys
 import zipfile
 from pathlib import Path
 
+from release_files import iter_release_files
+
 ROOT = Path(__file__).resolve().parents[1]
 
 VALIDATORS = {
@@ -26,8 +28,8 @@ def run(*arguments: str) -> None:
 
 def manifest_entries() -> list[tuple[str, str]]:
     entries = []
-    for path in sorted(ROOT.rglob("*")):
-        if not path.is_file() or path.name == "MANIFEST.sha256" or "__pycache__" in path.parts:
+    for path in sorted(iter_release_files(ROOT)):
+        if path.name == "MANIFEST.sha256":
             continue
         relative = path.relative_to(ROOT).as_posix()
         entries.append((relative, hashlib.sha256(path.read_bytes()).hexdigest()))
@@ -94,9 +96,8 @@ def main() -> None:
     )
     output.parent.mkdir(parents=True, exist_ok=True)
     with zipfile.ZipFile(output, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
-        for path in sorted(ROOT.rglob("*")):
-            if path.is_file() and "__pycache__" not in path.parts:
-                archive.write(path, arcname="SIGNAL-ATLAS/" + path.relative_to(ROOT).as_posix())
+        for path in sorted(iter_release_files(ROOT)):
+            archive.write(path, arcname="SIGNAL-ATLAS/" + path.relative_to(ROOT).as_posix())
 
     members = verify_archive(output, entries)
     print(

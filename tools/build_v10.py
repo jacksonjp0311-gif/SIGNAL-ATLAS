@@ -4,6 +4,7 @@ from __future__ import annotations
 import csv, hashlib, json, re, subprocess, sys
 from collections import Counter, defaultdict
 from pathlib import Path
+from release_files import iter_release_files
 
 ROOT=Path(__file__).resolve().parents[1]
 DATE="2026-11-03"
@@ -374,7 +375,7 @@ def update_navigation(sourcecount,claimcount,notecount):
   lines[first+1:first+1]=["","## v1.0 delivered — 2026-11-03","","This first complete edition compiles public records, dated observations, provenance-bound derivations, offline search, a coverage view, public SIGINT history, and teaching routes. See the [release summary](RELEASE_SUMMARY_v10.md) and [audit](RELEASE_AUDIT_v10.md). Future releases should extend dated collections and source coverage based on actual use.",""]
   t="\n".join(lines)+"\n"
  p.write_text(t,encoding="utf-8")
- (ROOT/"CHANGELOG.md").write_text("# Changelog\n\n## v1.0 — 2026-11-03\n\n- Added a frozen NOAA GOES X-ray snapshot and exact timestamp/satellite channel pairing.\n- Added five attributed NSA, GCHQ, and ASD history routes and claims.\n- Added offline unified search, collection coverage, input hashes, provenance, and an AI-readable packet.\n- Added two teaching lessons, collection guidance, release lineage, and focused validation.\n- Preserved the evergreen logo and v0.5-v0.8 contents.\n",encoding="utf-8")
+ (ROOT/"CHANGELOG.md").write_text("# Changelog\n\n## v1.0 repository compatibility update — 2026-11-03\n\n- Excluded Git metadata from lineage, validation, and ZIP packaging in ordinary and linked worktrees; retained .github project files.\n- Added two focused packaging regressions and retained the original frozen datasets and evergreen logo.\n- Recorded the public repository and preserved its user-selected MIT LICENSE; the original v1.0 ZIP remains an immutable historical archive.\n\n## v1.0 — 2026-11-03\n\n- Added a frozen NOAA GOES X-ray snapshot and exact timestamp/satellite channel pairing.\n- Added five attributed NSA, GCHQ, and ASD history routes and claims.\n- Added offline unified search, collection coverage, input hashes, provenance, and an AI-readable packet.\n- Added two teaching lessons, collection guidance, release lineage, and focused validation.\n- Preserved the evergreen logo and v0.5-v0.8 contents.\n",encoding="utf-8")
  p=ROOT/"START-HERE.md";old=p.read_text(encoding="utf-8");p.write_text(old if "## Version 1.0" in old else old+"\n\n## Version 1.0\n\n1. Use [Unified Search](site/unified_search.html) to find sources, claims, datasets, lessons, or research documents.\n2. Check [dataset coverage](site/coverage.html) for time windows and gaps.\n3. Follow [Lesson 30](courses/30-compile-observations-and-provenance.md) from raw input to derived series.\n4. Follow [Lesson 29](courses/29-public-sigint-history.md) for public military SIGINT research routes.\n",encoding="utf-8")
  p=ROOT/"AGENTS.md";old=p.read_text(encoding="utf-8");p.write_text(old if "## v1.0 local commands" in old else old+"\n\n## v1.0 local commands\n\n- Search frozen local records: python tools/atlas_search_v10.py \\\"solar wind\\\" --kind dataset.\n- Rebuild deterministic derivatives: python tools/build_v10.py. No live fetch is used.\n- Validate with tools/validate_v10.py and unittest discover -s tests -p test_v10_atlas.py.\n- New rolling data is obtained only through the explicit dated fetch tool, which will not overwrite this snapshot.\n",encoding="utf-8")
  (ROOT/"THREAD-RESUME-HANDOFF.md").write_text("""# Signal Atlas thread-resume handoff
@@ -383,12 +384,13 @@ def update_navigation(sourcecount,claimcount,notecount):
 
 - Goal: compile useful public science, signal, technology, and historical data into a coherent, navigable system for humans and AI, with origin, dates, joins, evidence roles, and limits attached.
 - Release: first complete v1.0 edition. Preserve the evergreen version-neutral logo at assets/signal_atlas_logo_header.png.
+- Repository source update: Git metadata is excluded from release lineage, validation, and packaging; the original v1.0 ZIP remains a historical snapshot. Preserve the user-created MIT LICENSE for project-owned material.
 - User direction: collect more data; make the system coherent and useful; the public GitHub repository is exactly SIGNAL-ATLAS, with no version number.
-- GitHub: public repository creation is authorized but pending because connected GitHub tools do not expose repository creation. Do not create another name or publish elsewhere.
+- GitHub: the public repository is https://github.com/jacksonjp0311-gif/SIGNAL-ATLAS. Keep the repository name version-neutral; versioned archives remain preserved in the Library.
 - Library: preserve v0.5, v0.6, v0.7, v0.8, and v1.0 archives with their summary, audit, and handoff in the persistent SIGNAL ATLAS Space.
 - Start with README.md, site/unified_search.html, site/coverage.html, docs/research/RELEASE_SUMMARY_v10.md, and docs/research/RELEASE_AUDIT_v10.md.
 - New batch: NSA, GCHQ and ASD public-history routes; one frozen NOAA primary GOES X-ray snapshot and exact paired channels.
-- Future work: extend dated collections and source coverage; create and push to SIGNAL-ATLAS when repository-creation access is available.
+- Future work: extend dated collections and source coverage in SIGNAL-ATLAS, preserving the published archive history and release provenance.
 
 ## Reproduction
 
@@ -427,7 +429,13 @@ python tools/atlas_search_v10.py "Pearl Harbor" --kind source --json
 
 The GOES file is one rolling six-hour capture, not a continuous archive. Physical quantities and time supports differ. No interpolation, event causality, nowcast, or forecast is claimed. Search is lexical over bundled metadata and selected Markdown; it does not crawl remote pages, index PDF full text, or answer with an LLM.
 
-The requested public GitHub name is SIGNAL-ATLAS. Public creation is authorized but pending because current connected GitHub tools cannot create a repository. Artifacts should remain in the persistent SIGNAL ATLAS Library with earlier versions.
+The public repository is [SIGNAL-ATLAS](https://github.com/jacksonjp0311-gif/SIGNAL-ATLAS). The original v1.0 archive and earlier versions remain preserved in the persistent SIGNAL ATLAS Library; repository publication does not replace those historical archives.
+
+## Repository source compatibility update
+
+The current source excludes .git directories and linked-worktree pointer files consistently from lineage, validation, and ZIP packaging while retaining .github project files. Two focused packaging regressions cover both Git layouts. The user-created MIT LICENSE is preserved for project-owned material; existing third-party source rights flags remain attached.
+
+The frozen datasets and evergreen logo retain their original bytes. The historical SIGNAL-ATLAS-v1.0.zip remains unchanged with SHA-256 c4b67b17eb87e6fca5e9ad8d0b3075c2bb178ad4e0c87bdc05c52f9a941b892d. The current repository source and any separately named source ZIP include this compatibility fix.
 """,encoding="utf-8")
  lin=loadj("data/release_v10_lineage.json") if (ROOT/"data/release_v10_lineage.json").exists() else {}
  (ROOT/"docs/research/RELEASE_AUDIT_v10.md").write_text(f"""# SIGNAL ATLAS v1.0 — Release audit
@@ -471,7 +479,7 @@ def build_lineage():
   if not f.exists():missing.append(x["path"])
   elif digest(f.read_bytes())!=x["sha256"]:changed.append(x["path"])
  if missing:raise ValueError("Missing v0.8 parent files "+str(missing[:5]))
- current={f.relative_to(ROOT).as_posix() for f in ROOT.rglob("*") if f.is_file() and f.name not in {"MANIFEST.sha256","release_v10_lineage.json"} and "__pycache__" not in f.parts}
+ current={f.relative_to(ROOT).as_posix() for f in iter_release_files(ROOT) if f.name not in {"MANIFEST.sha256","release_v10_lineage.json"}}
  added=sorted((current-paths)|{"data/release_v10_lineage.json"})
  release_entries=[{"path":r,"sha256":digest((ROOT/r).read_bytes())} for r in sorted(current)]
  savej(p,{"parent_release":"v0.8","parent_manifest_sha256":basehash,"parent_entry_count":len(base),"parent_entries":base,"allowed_changed_paths":sorted(changed),"added_paths":added,"release_entry_count":len(release_entries),"release_entries":release_entries,"policy":"Every v0.8 path remains. Changed parent paths are explicit; other parent content is byte-identical. All additions are inventoried and release hashes are recorded."})
