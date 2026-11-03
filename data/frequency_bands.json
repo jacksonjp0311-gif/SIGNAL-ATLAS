@@ -1,0 +1,145 @@
+[
+  {
+    "symbol": "ELF",
+    "name": "Extremely Low Frequency",
+    "lower_hz": 3,
+    "upper_hz_exclusive": 30,
+    "approx_wavelength_at_lower_m": 99930819.333333,
+    "approx_wavelength_at_upper_m": 9993081.933333,
+    "note": "Frequency range is a generic nomenclature, not a national allocation or identification of a specific transmission.",
+    "reference_ids": [
+      "SRC-001",
+      "SRC-002"
+    ]
+  },
+  {
+    "symbol": "SLF",
+    "name": "Super Low Frequency",
+    "lower_hz": 30,
+    "upper_hz_exclusive": 300,
+    "approx_wavelength_at_lower_m": 9993081.933333,
+    "approx_wavelength_at_upper_m": 999308.193333,
+    "note": "Frequency range is a generic nomenclature, not a national allocation or identification of a specific transmission.",
+    "reference_ids": [
+      "SRC-001",
+      "SRC-002"
+    ]
+  },
+  {
+    "symbol": "ULF",
+    "name": "Ultra Low Frequency",
+    "lower_hz": 300,
+    "upper_hz_exclusive": 3000,
+    "approx_wavelength_at_lower_m": 999308.193333,
+    "approx_wavelength_at_upper_m": 99930.819333,
+    "note": "Frequency range is a generic nomenclature, not a national allocation or identification of a specific transmission.",
+    "reference_ids": [
+      "SRC-001",
+      "SRC-002"
+    ]
+  },
+  {
+    "symbol": "VLF",
+    "name": "Very Low Frequency",
+    "lower_hz": 3000,
+    "upper_hz_exclusive": 30000,
+    "approx_wavelength_at_lower_m": 99930.819333,
+    "approx_wavelength_at_upper_m": 9993.081933,
+    "note": "Frequency range is a generic nomenclature, not a national allocation or identification of a specific transmission.",
+    "reference_ids": [
+      "SRC-001",
+      "SRC-002"
+    ]
+  },
+  {
+    "symbol": "LF",
+    "name": "Low Frequency",
+    "lower_hz": 30000,
+    "upper_hz_exclusive": 300000,
+    "approx_wavelength_at_lower_m": 9993.081933,
+    "approx_wavelength_at_upper_m": 999.308193,
+    "note": "Frequency range is a generic nomenclature, not a national allocation or identification of a specific transmission.",
+    "reference_ids": [
+      "SRC-001",
+      "SRC-002"
+    ]
+  },
+  {
+    "symbol": "MF",
+    "name": "Medium Frequency",
+    "lower_hz": 300000,
+    "upper_hz_exclusive": 3000000,
+    "approx_wavelength_at_lower_m": 999.308193,
+    "approx_wavelength_at_upper_m": 99.930819,
+    "note": "Frequency range is a generic nomenclature, not a national allocation or identification of a specific transmission.",
+    "reference_ids": [
+      "SRC-001",
+      "SRC-002"
+    ]
+  },
+  {
+    "symbol": "HF",
+    "name": "High Frequency",
+    "lower_hz": 3000000,
+    "upper_hz_exclusive": 30000000,
+    "approx_wavelength_at_lower_m": 99.930819,
+    "approx_wavelength_at_upper_m": 9.993082,
+    "note": "Frequency range is a generic nomenclature, not a national allocation or identification of a specific transmission.",
+    "reference_ids": [
+      "SRC-001",
+      "SRC-002"
+    ]
+  },
+  {
+    "symbol": "VHF",
+    "name": "Very High Frequency",
+    "lower_hz": 30000000,
+    "upper_hz_exclusive": 300000000,
+    "approx_wavelength_at_lower_m": 9.993082,
+    "approx_wavelength_at_upper_m": 0.999308,
+    "note": "Frequency range is a generic nomenclature, not a national allocation or identification of a specific transmission.",
+    "reference_ids": [
+      "SRC-001",
+      "SRC-002"
+    ]
+  },
+  {
+    "symbol": "UHF",
+    "name": "Ultra High Frequency",
+    "lower_hz": 300000000,
+    "upper_hz_exclusive": 3000000000,
+    "approx_wavelength_at_lower_m": 0.999308,
+    "approx_wavelength_at_upper_m": 0.099931,
+    "note": "Frequency range is a generic nomenclature, not a national allocation or identification of a specific transmission.",
+    "reference_ids": [
+      "SRC-001",
+      "SRC-002"
+    ]
+  },
+  {
+    "symbol": "SHF",
+    "name": "Super High Frequency",
+    "lower_hz": 3000000000,
+    "upper_hz_exclusive": 30000000000,
+    "approx_wavelength_at_lower_m": 0.099931,
+    "approx_wavelength_at_upper_m": 0.009993,
+    "note": "Frequency range is a generic nomenclature, not a national allocation or identification of a specific transmission.",
+    "reference_ids": [
+      "SRC-001",
+      "SRC-002"
+    ]
+  },
+  {
+    "symbol": "EHF",
+    "name": "Extremely High Frequency",
+    "lower_hz": 30000000000,
+    "upper_hz_exclusive": 300000000000,
+    "approx_wavelength_at_lower_m": 0.009993,
+    "approx_wavelength_at_upper_m": 0.000999,
+    "note": "Frequency range is a generic nomenclature, not a national allocation or identification of a specific transmission.",
+    "reference_ids": [
+      "SRC-001",
+      "SRC-002"
+    ]
+  }
+]

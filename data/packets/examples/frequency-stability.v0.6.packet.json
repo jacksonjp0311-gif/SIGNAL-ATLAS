@@ -1,0 +1,153 @@
+{
+  "schema": "signal-atlas-research-packet/0.6",
+  "atlas_version": "0.6",
+  "created_at": "2026-11-02",
+  "query": "frequency stability",
+  "retrieval_method": "deterministic local metadata terms plus inspectable curator-authored phrase-to-source mappings; no network, full-text search, embedding, or model",
+  "alias_lexicon_version": "signal-atlas-query-aliases/0.6",
+  "matched_alias_concepts": [
+    {
+      "concept_id": "frequency-stability",
+      "matched_phrases": [
+        "frequency stability"
+      ],
+      "mapping_basis": "NIST titles, catalog descriptions, and reviewed terminology."
+    }
+  ],
+  "input_sha256": {
+    "sources.jsonl": "2089313b37ee7c47b14ffb1582ce43cc8000bf47a733e6138881f89505f14f71",
+    "claims.jsonl": "9e5cfe427c3f4c498d3484ccc9263332465b8afcf89d94338691cf50da7083b1",
+    "query_aliases_v06.json": "20dd65cd2bc91c5769bfe5d0149612b3185bc427bb33d46d30ed2275ab50920d"
+  },
+  "sources": [
+    {
+      "id": "SRC-136",
+      "title": "Handbook of Frequency Stability Analysis (NIST SP 1065)",
+      "publisher": "National Institute of Standards and Technology",
+      "country": "United States",
+      "domain": "science",
+      "url": "https://www.nist.gov/publications/handbook-frequency-stability-analysis",
+      "summary": "NIST's 2008 tutorial and reference describes frequency-stability definitions, measurement systems and data formats, preprocessing, analysis methods, postprocessing, and reporting. The catalog page links the report; no third-party PDF is bundled.",
+      "rights": "link-only; page-level reuse terms not assessed; no PDF mirrored",
+      "review_status": "primary-page-checked",
+      "review_scope": "Official NIST publication record and abstract checked; secondary use is limited to its published scope.",
+      "time_scope": "2008",
+      "checked_at": "2026-11-02",
+      "match_reasons": [
+        {
+          "type": "curated_alias",
+          "concept_id": "frequency-stability",
+          "matched_phrases": [
+            "frequency stability"
+          ]
+        },
+        {
+          "type": "exact_metadata_terms",
+          "matched_terms": [
+            "frequency",
+            "stability"
+          ]
+        }
+      ],
+      "retrieval_score": 138
+    },
+    {
+      "id": "SRC-139",
+      "title": "Frequency Measurement",
+      "publisher": "National Institute of Standards and Technology",
+      "country": "United States",
+      "domain": "science",
+      "url": "https://www.nist.gov/publications/frequency-measurement",
+      "summary": "NIST publication record for reference material on frequency measurement, including accuracy, stability, terminology, and measurement context.",
+      "rights": "link-only; page-level reuse terms not assessed",
+      "review_status": "primary-page-checked",
+      "review_scope": "Official NIST publication page checked; the page is a discovery record, not a substitute for the linked material.",
+      "time_scope": "publication record",
+      "checked_at": "2026-11-02",
+      "match_reasons": [
+        {
+          "type": "curated_alias",
+          "concept_id": "frequency-stability",
+          "matched_phrases": [
+            "frequency stability"
+          ]
+        },
+        {
+          "type": "exact_metadata_terms",
+          "matched_terms": [
+            "frequency",
+            "stability"
+          ]
+        }
+      ],
+      "retrieval_score": 122
+    },
+    {
+      "id": "SRC-138",
+      "title": "Calibration Services: Time and Frequency",
+      "publisher": "National Institute of Standards and Technology",
+      "country": "United States",
+      "domain": "science",
+      "url": "https://www.nist.gov/pml/time-and-frequency-division/time-services/calibration-services-time-and-frequency-division",
+      "summary": "NIST describes time- and frequency-calibration services and examples of phase and amplitude modulation-noise measurements. Service scope and listed frequency ranges are page-specific and may change.",
+      "rights": "link-only; page-level reuse terms not assessed",
+      "review_status": "primary-page-checked",
+      "review_scope": "Official NIST page checked for service descriptions; this card does not assert that any particular device was calibrated.",
+      "time_scope": "living service page",
+      "checked_at": "2026-11-02",
+      "match_reasons": [
+        {
+          "type": "curated_alias",
+          "concept_id": "frequency-stability",
+          "matched_phrases": [
+            "frequency stability"
+          ]
+        }
+      ],
+      "retrieval_score": 119
+    }
+  ],
+  "claims_attributed_to_sources": [
+    {
+      "id": "C-070",
+      "claim": "NIST SP 1065 presents methods and reporting guidance for frequency-stability analysis, including measurement systems, data formats, and processing steps.",
+      "claim_type": "source-described-scope",
+      "evidence_status": "source-attributed",
+      "review_date": "2026-11-02",
+      "matched_source_ids": [
+        "SRC-136"
+      ],
+      "all_claim_source_ids": [
+        "SRC-136"
+      ],
+      "partial_evidence_selection": false,
+      "notes": "The claim describes the NIST publication's stated scope; no particular oscillator performance is asserted."
+    },
+    {
+      "id": "C-072",
+      "claim": "NIST's public time-and-frequency service page describes calibration services and measurement examples for phase and amplitude modulation noise.",
+      "claim_type": "source-described-scope",
+      "evidence_status": "source-attributed",
+      "review_date": "2026-11-02",
+      "matched_source_ids": [
+        "SRC-138"
+      ],
+      "all_claim_source_ids": [
+        "SRC-138"
+      ],
+      "partial_evidence_selection": false,
+      "notes": "A service page is not evidence of a calibration result for a specific device."
+    }
+  ],
+  "candidate_notes_excluded_by_default": true,
+  "candidate_notes": [],
+  "unresolved": [],
+  "caveats": [
+    "Source cards summarize external material and can be incomplete or stale; open the original URL.",
+    "Source self-description and archive descriptions are attributed evidence, not independent corroboration.",
+    "A claim can have only a subset of its cited sources in this bounded packet; inspect the partial-selection flag.",
+    "Aliases are editorial retrieval hints, not semantic equivalence or calibrated confidence.",
+    "A checksum establishes byte identity, not source truth, freshness, license, answer quality, or inference cost."
+  ],
+  "packet_sha256": "cdabdf7b879959fe7e97cafc1fa1b9cd50adb213b43fa2e187d2e4b922e6ff36"
+}

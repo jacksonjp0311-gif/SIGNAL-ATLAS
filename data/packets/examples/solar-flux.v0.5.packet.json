@@ -1,0 +1,99 @@
+{
+  "schema": "signal-atlas-research-packet/0.5",
+  "atlas_version": "0.5",
+  "query": "solar flux",
+  "retrieval_method": "bounded title/topic/summary metadata rank; not web or PDF full text",
+  "index_sha256": "37271fe525045e12587f182c33ff313e714013b8a94660960dad29d8dca2c84b",
+  "sources": [
+    {
+      "id": "SRC-116",
+      "title": "NOAA 30-day 10 cm observed solar flux JSON",
+      "publisher": "NOAA SWPC (observations from NRC Canada)",
+      "country": "International",
+      "domain": "science",
+      "url": "https://services.swpc.noaa.gov/products/10cm-flux-30-day.json",
+      "summary": "Machine-readable recent 30-day F10.7 values in solar flux units; 2026-11-02 sample is retained as a cited dataset excerpt.",
+      "rights": "link-only; dataset excerpt attribution in data/datasets/README.md",
+      "review_status": "indexed-primary-landing-page",
+      "time_scope": "science/technical reference",
+      "checked_at": "2026-11-02",
+      "review_scope": "Official or scholarly record and public summary reviewed; not independent full-text reproduction"
+    },
+    {
+      "id": "SRC-114",
+      "title": "NOAA F10.7 solar radio emissions explained",
+      "publisher": "NOAA Space Weather Prediction Center",
+      "country": "United States",
+      "domain": "science",
+      "url": "https://www.spaceweather.gov/phenomena/f107-cm-radio-emissions",
+      "summary": "F10.7 emission at 10.7 cm/2800 MHz is a measured indicator of solar activity; solar measurements are not communications interceptions.",
+      "rights": "link-only; original page/media rights not independently cleared",
+      "review_status": "indexed-primary-landing-page",
+      "time_scope": "science/technical reference",
+      "checked_at": "2026-11-02",
+      "review_scope": "Official or scholarly record and public summary reviewed; not independent full-text reproduction"
+    },
+    {
+      "id": "SRC-115",
+      "title": "NOAA Solar Cycle Progression and observed indices documentation",
+      "publisher": "NOAA SWPC",
+      "country": "United States",
+      "domain": "science",
+      "url": "https://swpc-drupal.woc.noaa.gov/products/solar-cycle-progression",
+      "summary": "Definitions of monthly observed sunspot-number and F10.7 radio-flux fields with recent values marked provisional.",
+      "rights": "link-only; original page/media rights not independently cleared",
+      "review_status": "indexed-primary-landing-page",
+      "time_scope": "science/technical reference",
+      "checked_at": "2026-11-02",
+      "review_scope": "Official or scholarly record and public summary reviewed; not independent full-text reproduction"
+    }
+  ],
+  "claims_attributed_to_sources": [
+    {
+      "id": "C-057",
+      "claim": "NOAA describes 10.7 cm (2800 MHz) solar radio flux as a long-running solar-activity indicator, commonly reported in solar flux units.",
+      "evidence_status": "source-attributed",
+      "matched_source_ids": [
+        "SRC-114"
+      ],
+      "all_claim_source_ids": [
+        "SRC-114"
+      ],
+      "partial_evidence_selection": false
+    },
+    {
+      "id": "C-058",
+      "claim": "The NOAA SWPC 30-day endpoint exposes dated F10.7 flux observations used for the self-contained 2026-11-02 Atlas time-series experiment.",
+      "evidence_status": "checked-sample",
+      "matched_source_ids": [
+        "SRC-116"
+      ],
+      "all_claim_source_ids": [
+        "SRC-116"
+      ],
+      "partial_evidence_selection": false
+    },
+    {
+      "id": "C-059",
+      "claim": "Recent months of NOAA monthly solar indices may be preliminary; time-scoped analyses must not silently treat them as final.",
+      "evidence_status": "source-attributed",
+      "matched_source_ids": [
+        "SRC-115"
+      ],
+      "all_claim_source_ids": [
+        "SRC-115"
+      ],
+      "partial_evidence_selection": false
+    }
+  ],
+  "candidate_notes_excluded_by_default": true,
+  "candidate_notes": [],
+  "unresolved": [],
+  "caveats": [
+    "Source URLs may be stale since their last review.",
+    "Source cards summarize externally hosted material and do not contain that material.",
+    "Source self-description is not independent verification.",
+    "Payload size is not an inference cost measurement."
+  ],
+  "packet_sha256": "0d6ad2df5f53df6b6f60d93ffa8d17c05be7cc89d04e7dacad0e06f0a1d7e264"
+}

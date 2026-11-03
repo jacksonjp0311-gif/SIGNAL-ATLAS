@@ -1,0 +1,102 @@
+{
+  "benchmark": "fixed ten-query offline catalog smoke test",
+  "version": "0.4",
+  "interpretation": "Measures source-id coverage and bytes transferred, not inference compute, retrieval correctness at scale, source quality, or answer fidelity. Gold IDs were selected in advance from the same catalog; this is an in-sample check.",
+  "cases": [
+    {
+      "query": "radio regulations",
+      "expected_source_id": "SRC-097",
+      "hit_at_5": true,
+      "returned": 4,
+      "packet_bytes": 3738,
+      "full_catalog_metadata_bytes": 82868,
+      "payload_fraction": 0.045108
+    },
+    {
+      "query": "radio astronomy",
+      "expected_source_id": "SRC-105",
+      "hit_at_5": true,
+      "returned": 2,
+      "packet_bytes": 2244,
+      "full_catalog_metadata_bytes": 82868,
+      "payload_fraction": 0.027079
+    },
+    {
+      "query": "remote sensing",
+      "expected_source_id": "SRC-103",
+      "hit_at_5": true,
+      "returned": 5,
+      "packet_bytes": 4531,
+      "full_catalog_metadata_bytes": 82868,
+      "payload_fraction": 0.054677
+    },
+    {
+      "query": "Sweden history",
+      "expected_source_id": "SRC-108",
+      "hit_at_5": true,
+      "returned": 1,
+      "packet_bytes": 1573,
+      "full_catalog_metadata_bytes": 82868,
+      "payload_fraction": 0.018982
+    },
+    {
+      "query": "sampling Fourier",
+      "expected_source_id": "SRC-100",
+      "hit_at_5": true,
+      "returned": 4,
+      "packet_bytes": 3844,
+      "full_catalog_metadata_bytes": 82868,
+      "payload_fraction": 0.046387
+    },
+    {
+      "query": "radar phase",
+      "expected_source_id": "SRC-102",
+      "hit_at_5": true,
+      "returned": 1,
+      "packet_bytes": 1599,
+      "full_catalog_metadata_bytes": 82868,
+      "payload_fraction": 0.019296
+    },
+    {
+      "query": "cryptologic records",
+      "expected_source_id": "SRC-107",
+      "hit_at_5": true,
+      "returned": 1,
+      "packet_bytes": 1637,
+      "full_catalog_metadata_bytes": 82868,
+      "payload_fraction": 0.019754
+    },
+    {
+      "query": "speech dataset",
+      "expected_source_id": "SRC-111",
+      "hit_at_5": true,
+      "returned": 1,
+      "packet_bytes": 1587,
+      "full_catalog_metadata_bytes": 82868,
+      "payload_fraction": 0.019151
+    },
+    {
+      "query": "Japan white paper",
+      "expected_source_id": "SRC-109",
+      "hit_at_5": true,
+      "returned": 2,
+      "packet_bytes": 2388,
+      "full_catalog_metadata_bytes": 82868,
+      "payload_fraction": 0.028817
+    },
+    {
+      "query": "interferometry calibration",
+      "expected_source_id": "SRC-105",
+      "hit_at_5": true,
+      "returned": 1,
+      "packet_bytes": 1631,
+      "full_catalog_metadata_bytes": 82868,
+      "payload_fraction": 0.019682
+    }
+  ],
+  "pass_at_5": 10,
+  "total": 10,
+  "mean_packet_bytes": 2477,
+  "full_catalog_metadata_bytes": 82868,
+  "mean_reduction_in_metadata_payload_pct": 97.01
+}

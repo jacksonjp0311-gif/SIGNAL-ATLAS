@@ -1,0 +1,124 @@
+{
+  "atlas_version": "0.8",
+  "created_on": "2026-11-03",
+  "dataset_registry": {
+    "path": "data/dataset_registry.json",
+    "sha256": "e349859b5a09985ca63173badd720220fb9d85a47464c21ad4bb3decf92a6178"
+  },
+  "datasets": [
+    {
+      "active_rows": 1085,
+      "dataset_id": "DS-RTSW-PLASMA-2026-11-03",
+      "raw_file": "data/datasets/noaa_rtsw_wind_1m_2026-11-03.json",
+      "raw_rows": 3247,
+      "source_ids": [
+        "SRC-145"
+      ]
+    },
+    {
+      "active_rows": 1243,
+      "dataset_id": "DS-RTSW-MAG-2026-11-03",
+      "raw_file": "data/datasets/noaa_rtsw_mag_1m_2026-11-03.json",
+      "raw_rows": 3432,
+      "source_ids": [
+        "SRC-146"
+      ]
+    },
+    {
+      "dataset_id": "DS-RTSW-PAIRED-2026-11-03",
+      "file": "data/datasets/noaa_rtsw_active_paired_1m_2026-11-03.json",
+      "rows": 1031,
+      "source_ids": [
+        "SRC-145",
+        "SRC-146"
+      ]
+    },
+    {
+      "dataset_id": "DS-RTSW-DAILY-CONTEXT-2026-11-03",
+      "file": "data/datasets/noaa_rtsw_daily_context_2026-11-03.json",
+      "rows": 2,
+      "source_ids": [
+        "SRC-145",
+        "SRC-146",
+        "SRC-144"
+      ]
+    }
+  ],
+  "interpretation_limits": [
+    "The frozen endpoint files represent a rolling last-24-hour view, not a long historical archive.",
+    "The active spacecraft changes during the sample; spacecraft identity remains visible in every paired row.",
+    "The measurements are upstream of Earth. No propagation delay is applied when they are compared with daily geomagnetic context.",
+    "The paired records are a descriptive compilation, not a causal analysis, storm forecast, or instrument validation.",
+    "Daily summaries cover only the sampled minutes and are explicitly marked partial when they do not contain all 1,440 UTC minutes.",
+    "Estimated planetary Kp is a separate three-hour/day product and is included only as completed daily context.",
+    "Missing input values remain null; source quality fields are preserved without a new interpretation."
+  ],
+  "method": {
+    "daily_grouping": "The source time-tag date prefix; report coverage out of 1,440 minutes and preserve partial days",
+    "kp_context": "Show only complete daily Kp summaries; do not time-shift or interpret as simultaneous causal response",
+    "pairing": "Exact match on source and unchanged time_tag",
+    "selection": "active must be the JSON boolean true"
+  },
+  "packet_id": "PACKET-NOAA-RTSW-2026-11-03",
+  "packet_sha256": "7f7970c4dc49698a7212883f6da0d7699ff7cb86564c0e91e2159f2a0b15b2d6",
+  "provenance": {
+    "path": "data/provenance/release_v08_sources.jsonl",
+    "records": [
+      "PROV-003",
+      "PROV-004",
+      "PROV-005",
+      "PROV-006"
+    ],
+    "sha256": "580d8bd94b179dcdd729b10c94ec98d8649639fe165baaa2fa88fb7c11fbc15f"
+  },
+  "reuse_notes": [
+    "Raw all-spacecraft records are preserved separately from active-selected views.",
+    "Keep measured upstream plasma and field values distinct from estimated Kp and daily derived summaries.",
+    "The one-day capture is a small teaching and exploration sample, not a long historical study."
+  ],
+  "schema": "signal-atlas-research-packet.v0.8",
+  "snapshot": {
+    "captured_after_utc": "2026-11-03T06:12:25Z",
+    "captured_before_utc": "2026-11-03T06:12:03Z",
+    "records": [
+      {
+        "path": "data/datasets/noaa_rtsw_wind_1m_2026-11-03.json",
+        "record_count": 3247,
+        "sha256": "fcf00f33e4e8bacd855743b0c33add5279d55faec68c7d072c905fbcae3961d3",
+        "source_url": "https://services.swpc.noaa.gov/json/rtsw/rtsw_wind_1m.json",
+        "time_tag_end": "2026-11-03T06:06:02",
+        "time_tag_start": "2026-11-02T06:10:02"
+      },
+      {
+        "path": "data/datasets/noaa_rtsw_mag_1m_2026-11-03.json",
+        "record_count": 3432,
+        "sha256": "9b849aac5a24f9440d71b0cf5b59c7f0d4aaa5ba676cc552815c90e0ff4eec04",
+        "source_url": "https://services.swpc.noaa.gov/json/rtsw/rtsw_mag_1m.json",
+        "time_tag_end": "2026-11-03T06:08:00",
+        "time_tag_start": "2026-11-02T06:11:00"
+      }
+    ]
+  },
+  "source_records": [
+    {
+      "id": "SRC-145",
+      "url": "https://services.swpc.noaa.gov/json/rtsw/rtsw_wind_1m.json"
+    },
+    {
+      "id": "SRC-146",
+      "url": "https://services.swpc.noaa.gov/json/rtsw/rtsw_mag_1m.json"
+    },
+    {
+      "id": "SRC-144",
+      "url": "https://services.swpc.noaa.gov/text/daily-geomagnetic-indices.txt"
+    }
+  ],
+  "summary": "The dated snapshots contain 3247 plasma and 3432 magnetometer records; 1031 rows pair the selected active spacecraft on exact source and time-tag matches.",
+  "topic": "NOAA real-time solar-wind plasma and IMF measurements",
+  "window": {
+    "daily_context_rows": 2,
+    "end": "2026-11-03T06:04:00",
+    "paired_records": 1031,
+    "start": "2026-11-02T06:12:00"
+  }
+}

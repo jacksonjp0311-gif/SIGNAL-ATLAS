@@ -1,0 +1,25 @@
+{
+  "captured_after_utc": "2026-11-03T06:12:25Z",
+  "captured_before_utc": "2026-11-03T06:12:03Z",
+  "files": {
+    "magnetometer": {
+      "path": "data/datasets/noaa_rtsw_mag_1m_2026-11-03.json",
+      "record_count": 3432,
+      "sha256": "9b849aac5a24f9440d71b0cf5b59c7f0d4aaa5ba676cc552815c90e0ff4eec04",
+      "source_url": "https://services.swpc.noaa.gov/json/rtsw/rtsw_mag_1m.json",
+      "time_tag_end": "2026-11-03T06:08:00",
+      "time_tag_start": "2026-11-02T06:11:00"
+    },
+    "plasma": {
+      "path": "data/datasets/noaa_rtsw_wind_1m_2026-11-03.json",
+      "record_count": 3247,
+      "sha256": "fcf00f33e4e8bacd855743b0c33add5279d55faec68c7d072c905fbcae3961d3",
+      "source_url": "https://services.swpc.noaa.gov/json/rtsw/rtsw_wind_1m.json",
+      "time_tag_end": "2026-11-03T06:06:02",
+      "time_tag_start": "2026-11-02T06:10:02"
+    }
+  },
+  "handling": "Raw bytes were captured from the two NOAA endpoints, copied unchanged into this release workspace, and are retained byte-for-byte.",
+  "schema": "signal-atlas.snapshot-metadata.v1",
+  "snapshot_id": "NOAA-RTSW-2026-11-03"
+}

@@ -1,0 +1,711 @@
+{
+  "entry_count": 423,
+  "entry_kind_counts": {
+    "claim": 82,
+    "dataset": 10,
+    "document": 134,
+    "publication": 26,
+    "research_note": 21,
+    "source": 150
+  },
+  "inputs": [
+    {
+      "bytes": 8361,
+      "path": "AGENTS.md",
+      "sha256": "6193847718708d8ada9334cdc0cfcadaf2e332518ef9a6ea51352f33e86d4e86"
+    },
+    {
+      "bytes": 9637,
+      "path": "README.md",
+      "sha256": "2bfb90123b5f0e485509d99ee7956f39336d02d7facdb4a60cab12513751ed5d"
+    },
+    {
+      "bytes": 2968,
+      "path": "RESEARCH_METHOD.md",
+      "sha256": "27d81820761ef68f2aa144c6f77103482a941d7ca042dbc80c078a158e2a4e09"
+    },
+    {
+      "bytes": 3893,
+      "path": "START-HERE.md",
+      "sha256": "cfc3b3ba5e4da2946ef1cfcc858080a5113bafe47f547ecbfdcdc8d3fc03745a"
+    },
+    {
+      "bytes": 1299,
+      "path": "courses/01-signal-literacy.md",
+      "sha256": "4f575550e9ab4ebbe0cae1e6c27e6a86fc27f82142d6ebe9bb3637bd7785e35c"
+    },
+    {
+      "bytes": 1353,
+      "path": "courses/02-mapping-the-spectrum.md",
+      "sha256": "9b537ff8ba7f757a9451fa614aad87ae1fb75ec2806ae794f01dcdbefc62bb46"
+    },
+    {
+      "bytes": 1273,
+      "path": "courses/03-information-in-a-waveform.md",
+      "sha256": "38ec573d7441034d85aeb893664c7bc270ea77afefc43a1e363f85a1aa6197e9"
+    },
+    {
+      "bytes": 1306,
+      "path": "courses/04-sensors-and-receivers.md",
+      "sha256": "c330514207d34a37b39d11c7028dfa3a22ae8a28a99e132cc2fb0c6566fd32f8"
+    },
+    {
+      "bytes": 1250,
+      "path": "courses/05-preserving-valid-signal-data.md",
+      "sha256": "eea6f391006c114d139f050fb563db2d200627fcbe0cbd20e053730c4db4d0ea"
+    },
+    {
+      "bytes": 1352,
+      "path": "courses/06-what-sigint-means.md",
+      "sha256": "e8bfb0bbf3ae0d523f3033fe1914f14f4997096513186d4d493d20c21f58fa10"
+    },
+    {
+      "bytes": 1546,
+      "path": "courses/07-published-military-missions-around-the-world.md",
+      "sha256": "694ba022cbef3916a8e89ebd7bbef783abc9b5b17dfbb4646c66b69747d49ac0"
+    },
+    {
+      "bytes": 1546,
+      "path": "courses/08-doctrine-oversight-and-ethics.md",
+      "sha256": "081629f204ea6414a3fc450bdda2a5d5688922bb7918c5da8a9eefd311065969"
+    },
+    {
+      "bytes": 1558,
+      "path": "courses/09-historical-intelligence-and-source-criticism.md",
+      "sha256": "fd072af5c806932cfdd329cb06b25580cebeb4adbd4595dd38932f0f9acc48af"
+    },
+    {
+      "bytes": 1537,
+      "path": "courses/10-evidence-graph-capstone.md",
+      "sha256": "9eeac3894c1ecf69f76b72e79c447a7ae039a97a18755b186de54c89198dd129"
+    },
+    {
+      "bytes": 668,
+      "path": "courses/11_sampling_and_aliasing_lab.md",
+      "sha256": "bafc31b158658ee19db5abc7b3dd086879485fd6f4ef9813252ed5863b822d1b"
+    },
+    {
+      "bytes": 831,
+      "path": "courses/12_global_archive_research_lab.md",
+      "sha256": "6fcf7057d8ce74b1e3f44fca87c62a70d3079e2456849ac2506e7fc8b677ab45"
+    },
+    {
+      "bytes": 787,
+      "path": "courses/13_agent_provenance_lab.md",
+      "sha256": "df89d40590f8718edc21b7a496e95dc72310465f467d7d1d992c4cf98cd074bc"
+    },
+    {
+      "bytes": 1064,
+      "path": "courses/14-wave-physics-and-spectrum.md",
+      "sha256": "fc7b8c3f16cf40554305313bf80374f7f6d6aa42ba81a9c517cf203c5c9c5bf0"
+    },
+    {
+      "bytes": 1033,
+      "path": "courses/15-fourier-sampling-and-noise.md",
+      "sha256": "c545123218d379732ffbde4692d86e76a2fdc3e0bcfe417364ec4456c9ec350e"
+    },
+    {
+      "bytes": 1072,
+      "path": "courses/16-reading-scientific-papers.md",
+      "sha256": "efd67121e9569bbbb5db90b8039d27fcc47e3e3b5d4fb60941f4d448c6261dda"
+    },
+    {
+      "bytes": 1038,
+      "path": "courses/17-cross-domain-discovery.md",
+      "sha256": "4d70503645a3dddfd4f25b3673ca660e204f1f3b63029270e3c77a64b6157e6e"
+    },
+    {
+      "bytes": 1891,
+      "path": "courses/18-synthetic-signal-experiment.md",
+      "sha256": "7ad024b81d1ac70b48ed63254ddf95eabdfe77025a9255b43b9d80f089eb3f29"
+    },
+    {
+      "bytes": 1255,
+      "path": "courses/19-evidence-packet-lab.md",
+      "sha256": "6811051d0609e572f807e20828ab6779c88177eca23f29e4335af3d182a23590"
+    },
+    {
+      "bytes": 1375,
+      "path": "courses/20-provenance-and-cross-domain-inference.md",
+      "sha256": "267d7792f650e0b99d37aa854dae34c40f166b02c3319933606a55ac3c9c2da2"
+    },
+    {
+      "bytes": 1255,
+      "path": "courses/21-observational-solar-radio-flux.md",
+      "sha256": "28cae83fb478c0d64cad41c27f74471f438fcab23f78ce8b655087d985c076a8"
+    },
+    {
+      "bytes": 1058,
+      "path": "courses/22-sar-phase-and-intensity.md",
+      "sha256": "9540840a6589e301931d11851ed40f8fad1d30de387472a139a92569e4f1b4d3"
+    },
+    {
+      "bytes": 1023,
+      "path": "courses/23-calibration-and-source-assumptions.md",
+      "sha256": "9bb5524cc359b16a01862b627f98ce56fbf48e292c626da824fb2db374627499"
+    },
+    {
+      "bytes": 854,
+      "path": "courses/24-research-packet-integrity.md",
+      "sha256": "ec06323c415a7394c653f78f0b5402cae36bc6eef82a0a39224e433c43167790"
+    },
+    {
+      "bytes": 2056,
+      "path": "courses/25-frequency-stability-and-measurement.md",
+      "sha256": "a7019d0ad9b96d2e082587862d4d4f9ce33adce41b2fa3bf87e284f9315710b1"
+    },
+    {
+      "bytes": 1628,
+      "path": "courses/26-public-records-and-source-criticism.md",
+      "sha256": "00d0d6526c8b34397d6c306e69a42d6d87d7c649beadd40cd7f1e57a02d58a3f"
+    },
+    {
+      "bytes": 1765,
+      "path": "courses/27_space_weather_data_join.md",
+      "sha256": "03dd87eece422efdce2271adb82696f0a5948a00451154f0239a690d06183195"
+    },
+    {
+      "bytes": 1730,
+      "path": "courses/28_solar_wind_time_alignment.md",
+      "sha256": "f5dd531a54ca7a3d7dce6072bd2d766c0739727f9e4a36342c0215593342ddba"
+    },
+    {
+      "bytes": 890,
+      "path": "courses/29-public-sigint-history.md",
+      "sha256": "9f2de1f839b2cb21aebdea4b460e22b1529be233d05d51637ac0d52f835278a5"
+    },
+    {
+      "bytes": 869,
+      "path": "courses/30-compile-observations-and-provenance.md",
+      "sha256": "37ae5ed8c1e11f424010f6893eba919c7f2bf625edd19f80e3e17988922b31b2"
+    },
+    {
+      "bytes": 1252,
+      "path": "courses/CAPSTONE.md",
+      "sha256": "8724a05f183a301a7ecf3fa8f6bf995374b9a7912b664b66493d439b165330fe"
+    },
+    {
+      "bytes": 4628,
+      "path": "courses/README.md",
+      "sha256": "afb453b9f425c66d83c17ec7f74d3297e6917218a096af75449fcbf16b8ce82d"
+    },
+    {
+      "bytes": 34228,
+      "path": "data/claims.jsonl",
+      "sha256": "7609521e42316ebce121eddfd268cb442dc3a0e84606f79f3aa097e77aef5051"
+    },
+    {
+      "bytes": 13229,
+      "path": "data/dataset_registry.json",
+      "sha256": "ee401385868ab2ffec6fc4aa0918aa8b5b5c4debc0cc044dfbcaffd34d4fe8f7"
+    },
+    {
+      "bytes": 22492,
+      "path": "data/publications.jsonl",
+      "sha256": "f03f5d729ca7f720ccfb7539b42adb2b0a783ea18ba54f6c50621a6b5c9b7004"
+    },
+    {
+      "bytes": 11887,
+      "path": "data/research_notes.jsonl",
+      "sha256": "c0d2b7539926772bd42ac02c6e4326bfe2263c01c1221af6479e0bdbec9297c3"
+    },
+    {
+      "bytes": 113798,
+      "path": "data/sources.jsonl",
+      "sha256": "4490be0637311f5b62e0f0f4f3bc4e2779dbed559f49e65b85805ec192f33580"
+    },
+    {
+      "bytes": 1511,
+      "path": "docs/applications/README.md",
+      "sha256": "d863bcc2fe530d79cd5d8a5fb73fecde589c4089b81a711277a327e30ad781eb"
+    },
+    {
+      "bytes": 1212,
+      "path": "docs/military/01_definitions.md",
+      "sha256": "8463c3d59ee9f175bc5aa9e255d2995992447cab6b41a6d180d913a361fa48b0"
+    },
+    {
+      "bytes": 1422,
+      "path": "docs/military/02_application_framework.md",
+      "sha256": "98f814686acbd826e24e2abf55c4ca5921058e97618f5f34218c2a556b48543f"
+    },
+    {
+      "bytes": 995,
+      "path": "docs/military/03_sigint_vs_emw.md",
+      "sha256": "d2ffb643b9e4e7ed1eab04dd29075f5570a2d77a61816017e251f089db2b4325"
+    },
+    {
+      "bytes": 1922,
+      "path": "docs/military/04_global_survey.md",
+      "sha256": "7fe3339da1b79ca8c59ca4fb8fa8c9a631fa0f5dfd086ab20012508b60f2d6d1"
+    },
+    {
+      "bytes": 1725,
+      "path": "docs/military/05_source_fusion.md",
+      "sha256": "0a66edb59042829fc7a0272119788b6aa067c3cea64cd5aafc347cc5cae1b578"
+    },
+    {
+      "bytes": 1081,
+      "path": "docs/military/06_history.md",
+      "sha256": "cadedd09f4a2c1a582d4d62d858df873ccda525f1fa6872f1eef7a0ff77759c2"
+    },
+    {
+      "bytes": 1979,
+      "path": "docs/military/07_comparative_evidence_lanes.md",
+      "sha256": "dfc0e56857d60d6c733e0e7ae1c725ca1980aa81c955e355deb0be21c8044448"
+    },
+    {
+      "bytes": 5515,
+      "path": "docs/military/PUBLIC_RECORDS_WORKFLOW_v06.md",
+      "sha256": "643044bb6d4bab9725666572e61010ea26f7fcaa013b9743769398d249f39df4"
+    },
+    {
+      "bytes": 1567,
+      "path": "docs/military/README.md",
+      "sha256": "e86162ee177df6143c65bce9caadfe56b8143586e473669657a7b423a002d946"
+    },
+    {
+      "bytes": 1140,
+      "path": "docs/regions/README.md",
+      "sha256": "8334b739f5f515a6fea679a9bb1a730b088025929e7636c29afa45383e03915d"
+    },
+    {
+      "bytes": 2368,
+      "path": "docs/regions/australia.md",
+      "sha256": "2d19ff6694af16145e4f994f58a338cf78f3b45f618a215db3843cced1e65890"
+    },
+    {
+      "bytes": 928,
+      "path": "docs/regions/brazil.md",
+      "sha256": "6e6fb3da9604dcd1aafc9cc9b190028dbd2e334ebcde104ea9826af4e4420abd"
+    },
+    {
+      "bytes": 1430,
+      "path": "docs/regions/canada.md",
+      "sha256": "4f80d6ce0a9d29e89b3694e97e3242690fcf4f42795dfc3e5aa7a01e71e8c9cb"
+    },
+    {
+      "bytes": 1531,
+      "path": "docs/regions/china.md",
+      "sha256": "d88c2381e8dac3a59bc83681485453ea42eb9d7928f719c07a4702ada7130702"
+    },
+    {
+      "bytes": 1122,
+      "path": "docs/regions/finland.md",
+      "sha256": "1e08bc5174da2d6b9771fec3905526d8bcee1ee3b9778e9e265eaa929351bd46"
+    },
+    {
+      "bytes": 2122,
+      "path": "docs/regions/france.md",
+      "sha256": "3040cf887aa006db00996cf1de79199895ba8fd2c8606bbab648ac96d2d74a46"
+    },
+    {
+      "bytes": 1416,
+      "path": "docs/regions/germany.md",
+      "sha256": "ceb6592360e97dce5d3e6f4ec6214cd9134e62db39cd902470a45572a6a155bf"
+    },
+    {
+      "bytes": 1332,
+      "path": "docs/regions/israel.md",
+      "sha256": "022a7d41b9d3190f4b347e1dd325a23f6f1a648edbf16a0440caabf8e87cf06a"
+    },
+    {
+      "bytes": 1867,
+      "path": "docs/regions/japan.md",
+      "sha256": "cad422f81330e57ec6c0ea9d8a3b63b71434cb9dc1845924d02a7ac70af57e11"
+    },
+    {
+      "bytes": 1815,
+      "path": "docs/regions/nato.md",
+      "sha256": "a1400b34bc20c4865e82e16b5f8360d01bf05c99b00f2f1bb4ffaff9e7448cbc"
+    },
+    {
+      "bytes": 2039,
+      "path": "docs/regions/netherlands.md",
+      "sha256": "b2caef336df96e39fcef6d72938a0f90aec4d495b8d432a47abbd73d143aa119"
+    },
+    {
+      "bytes": 1639,
+      "path": "docs/regions/new-zealand.md",
+      "sha256": "152a3e39bc9ab1d0264bf45bd72ed7bf0d4630d26e78471e8e2b8699c8726018"
+    },
+    {
+      "bytes": 1349,
+      "path": "docs/regions/norway.md",
+      "sha256": "c64faafc1ea0fa0ee9f37d91405436fa643a53a7c73a7c915703218a880d11cc"
+    },
+    {
+      "bytes": 1408,
+      "path": "docs/regions/russia.md",
+      "sha256": "d07335391f135dacc97ab0e1b0290a472b23e7f775710acb631a97956a54eda1"
+    },
+    {
+      "bytes": 893,
+      "path": "docs/regions/south-africa.md",
+      "sha256": "a622f70195690933dd8c66effd8550af3df4a1a8df034733d00235e6bb9c460f"
+    },
+    {
+      "bytes": 1253,
+      "path": "docs/regions/sweden.md",
+      "sha256": "287f035dcc47f08d13856506d1da879bcc3402a9bb55411d807ff43f68526806"
+    },
+    {
+      "bytes": 2237,
+      "path": "docs/regions/united-kingdom.md",
+      "sha256": "6d064fbc969490d51660388e7b6252890da3e8e29235db57208216e24a7202b8"
+    },
+    {
+      "bytes": 3011,
+      "path": "docs/regions/united-states.md",
+      "sha256": "bc07e6a13627b739039486826eba6e63091a9b33cc167d5570b214470f69743c"
+    },
+    {
+      "bytes": 2012,
+      "path": "docs/research/AGENT_RESEARCH_CONTRACT.md",
+      "sha256": "598012abcbb2e9284ded17a11416627454d5517caa80494f2831c8af90a59a04"
+    },
+    {
+      "bytes": 2140,
+      "path": "docs/research/COVERAGE_AUDIT.md",
+      "sha256": "a1b24406801a5fa1cdaae76d13e4590f215459dacbee5bd94b7f71e4d10f0c6a"
+    },
+    {
+      "bytes": 1556,
+      "path": "docs/research/COVERAGE_AUDIT_v04.md",
+      "sha256": "7d353c67fa1c2d45f0ac0dd1e27f4cfeee68998a09967a6166923ea0f9de2376"
+    },
+    {
+      "bytes": 1594,
+      "path": "docs/research/COVERAGE_AUDIT_v05.md",
+      "sha256": "bf1e434b5bc47aeafec5dff4b67c671b4dc831598f0a06dd30e760d1b0ae9a7c"
+    },
+    {
+      "bytes": 2879,
+      "path": "docs/research/DATA_COLLECTION_GUIDE_v07.md",
+      "sha256": "0cde1676366c3300d793cfe269f9691ead84c13cf151859d56c8086142c375e1"
+    },
+    {
+      "bytes": 1781,
+      "path": "docs/research/DATA_COLLECTION_GUIDE_v08.md",
+      "sha256": "91beca133bfc710e7c94d3636e6c4a19fb6d8d2fc2b2d6848eaf9333aaa84130"
+    },
+    {
+      "bytes": 1423,
+      "path": "docs/research/DATA_COLLECTION_GUIDE_v10.md",
+      "sha256": "89e699a14468944d71bc43b4c27ecba287870becff66c77af39cd9440778cc8d"
+    },
+    {
+      "bytes": 1462,
+      "path": "docs/research/DEEP_RESEARCH_SYNTHESIS_2026-11-02.md",
+      "sha256": "f240c46a65820e8b59c34468c3facc1b0738361014b25e40486dbd61f9780975"
+    },
+    {
+      "bytes": 2411,
+      "path": "docs/research/FIRST_BATCH_FINDINGS.md",
+      "sha256": "69c0340636cff7f59d90c62988c317f067e074a067ce0171c2550a053c6174e3"
+    },
+    {
+      "bytes": 2043,
+      "path": "docs/research/INTEGRATION_ROADMAP.md",
+      "sha256": "8beb45a575ec86545b048b4a4e42581ddc80420ea18e3a913934aec1924eb4ed"
+    },
+    {
+      "bytes": 3263,
+      "path": "docs/research/PACKET_SCHEMA_v06.md",
+      "sha256": "0c603cc6b6aacfacc0866178120e3c65f4f33287fb1877b45072e15a6ad00955"
+    },
+    {
+      "bytes": 2294,
+      "path": "docs/research/PUBLIC_HISTORICAL_RECORDS_v10.md",
+      "sha256": "21b2dca1150d5e92b2edd62988fce73072d8c9246d02aeb4c5b64017febf2bf9"
+    },
+    {
+      "bytes": 3908,
+      "path": "docs/research/README.md",
+      "sha256": "d779934208974272b6c359c944c4af88d4af96dbbc3c9ab54c8359f21e3b5077"
+    },
+    {
+      "bytes": 2591,
+      "path": "docs/research/RESEARCH_AMORTIZATION.md",
+      "sha256": "c1791dfb4170035d3ec579fd786eb2050cd89af4cc400ee2ee607c228e401bb8"
+    },
+    {
+      "bytes": 1283,
+      "path": "docs/research/RESEARCH_AMORTIZATION_v05.md",
+      "sha256": "77dfd60e56f4708316d25e4d4dd6075aff5c00164f0b3818e9d897541774f2ff"
+    },
+    {
+      "bytes": 2988,
+      "path": "docs/research/RESEARCH_ROTATION.md",
+      "sha256": "e8d27a6f89200af59df3181457ead6787ca9d6d3666001b0bbe0024dc5b0dd1d"
+    },
+    {
+      "bytes": 1556,
+      "path": "docs/research/REVIEW_CHECKLIST.md",
+      "sha256": "aa315f93af95f8e03e52a348f5fe084f976e9516b2a17e8bb1def4075f6743f7"
+    },
+    {
+      "bytes": 2983,
+      "path": "docs/research/ROADMAP_TO_1.0.md",
+      "sha256": "d9e04abb7e2031b1f3761dca58ce4b72813377700015431adc62a26567787045"
+    },
+    {
+      "bytes": 2156,
+      "path": "docs/research/SCIENCE_COVERAGE_AUDIT.md",
+      "sha256": "70cd067fc448e0867856ba8fe23a00b7b916a246e94797df28663cf89128ec32"
+    },
+    {
+      "bytes": 2284,
+      "path": "docs/research/SOURCE_REVIEW_v05.md",
+      "sha256": "987f5131d48a19f4003cb1ac1783159ba41a1d72f782808f05de00a4ffe3abf6"
+    },
+    {
+      "bytes": 1488,
+      "path": "docs/research/UNIFIED_SEARCH_AND_COVERAGE_v10.md",
+      "sha256": "19bd365ab93c8de13d0a1c96b1805109887417cf04afe3e25c6bb6ac325476ae"
+    },
+    {
+      "bytes": 1706,
+      "path": "docs/science/01_wave_physics.md",
+      "sha256": "fadb1ee4195a60edc2fd2ec3010aa4a6bd0ad1798be26b1e33a5b48e2d52bbda"
+    },
+    {
+      "bytes": 2302,
+      "path": "docs/science/02_signal_mathematics.md",
+      "sha256": "8c24af789f3188a79371a60a57417efbd5e964cbc63e2ef3f35dd2a4b383c5f1"
+    },
+    {
+      "bytes": 2051,
+      "path": "docs/science/03_knowledge_discovery.md",
+      "sha256": "6a85e64e1fb709263844d70410b6d4c55a955c17aa41c79c86735cc204cacb01"
+    },
+    {
+      "bytes": 1281,
+      "path": "docs/science/04_literature_map.md",
+      "sha256": "42e34c23533df0816265a55270c064a1f8938553a3d2e0408c9ebaeb0ad4dc71"
+    },
+    {
+      "bytes": 1452,
+      "path": "docs/science/05_experiment_design.md",
+      "sha256": "1b285892f145521c68c0acac4ef9099a63a5cb36e3308d1aa20f4c6bf59575b2"
+    },
+    {
+      "bytes": 1351,
+      "path": "docs/science/06_real_radio_measurements.md",
+      "sha256": "73d945bd3c74c797a3ade5bfc4b60ffab0864cf5684e603fb704c22066b5aaf1"
+    },
+    {
+      "bytes": 3813,
+      "path": "docs/science/07_frequency_stability_and_uncertainty.md",
+      "sha256": "315fc3a0d8560dd56b104940d477fc79dc501326cd362752497a5b3f68bc5317"
+    },
+    {
+      "bytes": 3386,
+      "path": "docs/science/08_space_weather_observations.md",
+      "sha256": "8f95f9527c52e194e54a00127f18c852c3ae904c64130101c889a950ec3375e2"
+    },
+    {
+      "bytes": 1424,
+      "path": "docs/science/09_goes_xray_flux_observations.md",
+      "sha256": "703dc7f68543693846312cd3c4df427e3e202bb8a3064a3dd945d1e5ae7cfd73"
+    },
+    {
+      "bytes": 3840,
+      "path": "docs/science/09_solar_wind_observations.md",
+      "sha256": "ce4013b6aa321087df1f2053585bdd95376b6a9fc3aeac3f15e8036afb63c82b"
+    },
+    {
+      "bytes": 3003,
+      "path": "docs/science/README.md",
+      "sha256": "75336b1308759bac5c5ec08f99a7e986290572a981aad4a6b5ecff4a0d85e3e7"
+    },
+    {
+      "bytes": 1110,
+      "path": "docs/spectrum/01_waves_and_units.md",
+      "sha256": "589ac197ce2bc6cb92dd1c41ae1717bf6efeb53f2b09e9944557a2baa1d710cc"
+    },
+    {
+      "bytes": 1115,
+      "path": "docs/spectrum/02_signal_families.md",
+      "sha256": "53104cd4839f04adf2b1f02940ff498092f8699035b1a22dc3980e513ff715e7"
+    },
+    {
+      "bytes": 869,
+      "path": "docs/spectrum/03_allocation_vs_observation.md",
+      "sha256": "6d8e3ab3932bfa65db7146b420facfea5d46324d0134dd94d6c29fbb5cf67c88"
+    },
+    {
+      "bytes": 1448,
+      "path": "docs/spectrum/04_sampling_and_aliasing.md",
+      "sha256": "5c5e3de3a0860aa55e97feb279945a9a8256c50e13fbcb95b800c21f68cbcd33"
+    },
+    {
+      "bytes": 688,
+      "path": "docs/spectrum/README.md",
+      "sha256": "fc75539a0a587ebf8088854a32772b83d58f612790fa085f0c3f73c7c6db8363"
+    },
+    {
+      "bytes": 1351,
+      "path": "docs/technology/02_signal_metadata_and_formats.md",
+      "sha256": "fb9031747e37dbd368294acf86ff781a67c1364eee0377c0c9cce8fa8942a48a"
+    },
+    {
+      "bytes": 1858,
+      "path": "docs/technology/README.md",
+      "sha256": "9bde3d66aa25410439a30275f4a2db5995509082b93c77f41e0941299d4a3ec3"
+    },
+    {
+      "bytes": 588,
+      "path": "documents/publications/reference-cards/PUB-001.md",
+      "sha256": "fc2941c6b171a04d8ec9fb3d53e4bbc4181419a351199155a97eeabb17d57d56"
+    },
+    {
+      "bytes": 579,
+      "path": "documents/publications/reference-cards/PUB-002.md",
+      "sha256": "5cf49ac87774a3765f653a30c281affc8a27e0cb1fc372358d84e5ee41915386"
+    },
+    {
+      "bytes": 451,
+      "path": "documents/publications/reference-cards/PUB-003.md",
+      "sha256": "8aacb6f0c67fe719385c4d26a15d1115ed59d3163f1d284151ac6b4d024e5305"
+    },
+    {
+      "bytes": 541,
+      "path": "documents/publications/reference-cards/PUB-004.md",
+      "sha256": "2ae5a15341c343678e46b89b4d95d832431014c0eda190677d3c27255c8995fd"
+    },
+    {
+      "bytes": 511,
+      "path": "documents/publications/reference-cards/PUB-005.md",
+      "sha256": "e5fac1b4708cb3c0aa9d9baf3a867d8bd00d6770100ddd53dc2a925e20955cc1"
+    },
+    {
+      "bytes": 527,
+      "path": "documents/publications/reference-cards/PUB-006.md",
+      "sha256": "4ca00560c162929495462edaf608a4f66f88561da6027f8c494f684eb54237cd"
+    },
+    {
+      "bytes": 561,
+      "path": "documents/publications/reference-cards/PUB-007.md",
+      "sha256": "be21773f2795306f1e5f5b2aefd056f35a748fcfb2e1f4dea316ee925a0ef74c"
+    },
+    {
+      "bytes": 583,
+      "path": "documents/publications/reference-cards/PUB-008.md",
+      "sha256": "b3032bc62eab920ceb67033ee6254a2bda1ab72f32a759380f0702796fcd4132"
+    },
+    {
+      "bytes": 531,
+      "path": "documents/publications/reference-cards/PUB-009.md",
+      "sha256": "2933bd5ab3fa94a114666d16f762cf17f183d1d9f68ff8fdc5623c760895f079"
+    },
+    {
+      "bytes": 577,
+      "path": "documents/publications/reference-cards/PUB-010.md",
+      "sha256": "9a9b198685850d26dfbac01d4a805cf1da3d3c3ac5ec185de7b637acddb79fcd"
+    },
+    {
+      "bytes": 547,
+      "path": "documents/publications/reference-cards/PUB-011.md",
+      "sha256": "4c544bf79d6e0b6c6612c372265f608322a2e023fa7eafaf00891527c257123f"
+    },
+    {
+      "bytes": 594,
+      "path": "documents/publications/reference-cards/PUB-012.md",
+      "sha256": "3132105a0a56f6524ec5aae2ad86964a8f91439a281f81ad485022151aff9d48"
+    },
+    {
+      "bytes": 459,
+      "path": "documents/publications/reference-cards/PUB-013.md",
+      "sha256": "c6a42c6418da5e714bc644dd12a4e27e62fa79cc1e1877a03567fdbf0d02f97d"
+    },
+    {
+      "bytes": 451,
+      "path": "documents/publications/reference-cards/PUB-014.md",
+      "sha256": "c12da1e32297ff433366d29e6bdf1a678552b2a68a918d0dbea3ae1b6dad4c0e"
+    },
+    {
+      "bytes": 560,
+      "path": "documents/publications/reference-cards/PUB-015.md",
+      "sha256": "8ef8117dea61cf46a64610537d9cc23ea87b6598a60b970df7a7d3ba30125ae8"
+    },
+    {
+      "bytes": 499,
+      "path": "documents/publications/reference-cards/PUB-016.md",
+      "sha256": "7d70fec02867c76538f2be8c7a384105493741fcdf889a817280b0d6f5b80051"
+    },
+    {
+      "bytes": 490,
+      "path": "documents/publications/reference-cards/PUB-017.md",
+      "sha256": "115d8096394b8d44c6c3379d729a4037fca90ef6876621d2b20be7f1cba4921b"
+    },
+    {
+      "bytes": 745,
+      "path": "documents/publications/reference-cards/PUB-018.md",
+      "sha256": "accae4a2d9a896e7e01c9a786516697d2af8175a1f251e620e1239f2288e172a"
+    },
+    {
+      "bytes": 751,
+      "path": "documents/publications/reference-cards/PUB-019.md",
+      "sha256": "9ac055114406093e0aff7b365cec11bc63e4413176c408152059aeeeca603da2"
+    },
+    {
+      "bytes": 729,
+      "path": "documents/publications/reference-cards/PUB-020.md",
+      "sha256": "99a910021584163146ec435b5775af2a3ee4a754650aadee2977ebdd050fc481"
+    },
+    {
+      "bytes": 299,
+      "path": "documents/publications/reference-cards/PUB-021.md",
+      "sha256": "81e4e29f92f434836f1b50a47293228454b5090632471a0ff2df4ae82c748e40"
+    },
+    {
+      "bytes": 338,
+      "path": "documents/publications/reference-cards/PUB-022.md",
+      "sha256": "0e217d4935471b9e2ca99c0e87837225eabb3c16497f449d97fc5df372c8f0ff"
+    },
+    {
+      "bytes": 244,
+      "path": "documents/publications/reference-cards/PUB-023.md",
+      "sha256": "1a8ced014e42aa9d044e25c1eb3369a1f9c61a4c621a72c9fbfb34170138c9f1"
+    },
+    {
+      "bytes": 882,
+      "path": "documents/publications/reference-cards/PUB-024.md",
+      "sha256": "0cfd2fb0479646a3b5fe89be94d843299be59f847d492f130102b5bac85308ec"
+    },
+    {
+      "bytes": 880,
+      "path": "documents/publications/reference-cards/PUB-025.md",
+      "sha256": "cbad2a9dc9e76e9040acef8d836358a076f4502e611080b2c546bf10fc9b7f01"
+    },
+    {
+      "bytes": 724,
+      "path": "documents/publications/reference-cards/PUB-026.md",
+      "sha256": "b95ab34bb30c8d5613a5740c45342c3dee8ea413edf8a1e3460d83acd5023fb5"
+    },
+    {
+      "bytes": 2258,
+      "path": "experiments/AGENT_BENCHMARK_PROTOCOL.md",
+      "sha256": "2a728693adabb53f942ac474482fec1955660d50e148721892df492445db147f"
+    },
+    {
+      "bytes": 2796,
+      "path": "experiments/README.md",
+      "sha256": "1cdf8b40e72aa089f98d45d9b0bdd1684185b9026e4440c4b5cb6a959b9ef168"
+    },
+    {
+      "bytes": 1096,
+      "path": "experiments/RETRIEVAL_EVALUATION_v05.md",
+      "sha256": "f0999d3304e382654c26dacb402ac767fb50480c8dc9ef404936589d74cbdb12"
+    },
+    {
+      "bytes": 1012,
+      "path": "experiments/frequency_stability_lab_README.md",
+      "sha256": "12c13a393dcb7482f5466d6e74c8304af03a8b9bb34140083f14f4f94fac6e93"
+    }
+  ],
+  "manifest_sha256": "85aa6ece0168c5a369999d00828f97e75d11914c1059541aa8cc1061ac50a629",
+  "release_version": "1.0",
+  "schema_version": 1
+}

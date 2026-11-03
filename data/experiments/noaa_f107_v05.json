@@ -1,0 +1,33 @@
+{
+  "name": "NOAA 10.7 cm solar radio flux, 30-day observed-data pilot",
+  "data_origin": "https://services.swpc.noaa.gov/products/10cm-flux-30-day.json",
+  "data_status": "actual public reported observations transcribed from source on 2026-11-02",
+  "content_sha256": "30553983bd2a9156d2864083c3166e46f75a10f1632d3ad98052b8585f27636e",
+  "sample_count": 30,
+  "first_date": "2026-10-04",
+  "last_date": "2026-11-02",
+  "unit": "solar flux units (sfu)",
+  "measurement_frequency_mhz": 2800,
+  "vacuum_wavelength_m": 0.107068735,
+  "mean": 109.9,
+  "sample_stddev": 16.314474,
+  "min": 89.0,
+  "max": 137.0,
+  "max_dates": [
+    "2026-10-18"
+  ],
+  "min_dates": [
+    "2026-10-25",
+    "2026-10-27",
+    "2026-10-29"
+  ],
+  "last_observation": 97.0,
+  "last_seven_day_trailing_mean": 92.142857,
+  "limitations": [
+    "30 days cannot establish a solar cycle or causal effects on communications",
+    "the underlying rolling endpoint is mutable; this dataset is a fixed dated excerpt",
+    "source time tags have no explicit time-zone offset",
+    "these are daily reported flux values, not raw IQ samples or personally intercepted transmissions"
+  ],
+  "interpretation": "established observational variation only; no scientific novelty inferred"
+}

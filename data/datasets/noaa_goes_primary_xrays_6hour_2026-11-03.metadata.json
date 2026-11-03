@@ -1,0 +1,31 @@
+{
+  "byte_count": 163005,
+  "capture_id": "NOAA-GOES-XRS-6H-2026-11-03",
+  "captured_after_utc": "2026-11-03T06:43:15Z",
+  "captured_before_utc": "2026-11-03T06:43:15Z",
+  "energy_channels": [
+    "0.05-0.4nm",
+    "0.1-0.8nm"
+  ],
+  "http_etag": "\"27cbd-65f598dc778fb\"",
+  "http_last_modified": "Tue, 03 Nov 2026 06:41:35 GMT",
+  "raw_file": "data/datasets/noaa_goes_primary_xrays_6hour_2026-11-03.json",
+  "raw_sha256": "e8e289be79d1734bb2e5cca7613d4924c4a45e3a77dcf61897782b984c47e23f",
+  "record_count": 716,
+  "record_schema_keys": [
+    "electron_contaminaton",
+    "electron_correction",
+    "energy",
+    "flux",
+    "observed_flux",
+    "satellite",
+    "time_tag"
+  ],
+  "satellites": [
+    18
+  ],
+  "source_url": "https://services.swpc.noaa.gov/json/goes/primary/xrays-6-hour.json",
+  "time_tag_end": "2026-11-03T06:39:00Z",
+  "time_tag_start": "2026-11-03T00:42:00Z",
+  "transformation": "Raw bytes preserved; JSON parsed only for metadata and validation."
+}

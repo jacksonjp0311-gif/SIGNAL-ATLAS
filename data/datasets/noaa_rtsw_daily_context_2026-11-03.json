@@ -1,0 +1,128 @@
+{
+  "atlas_version": "0.8",
+  "dataset_id": "DS-RTSW-DAILY-CONTEXT-2026-11-03",
+  "grouping": "Prefix date of unchanged NOAA time_tag; dates are not shifted.",
+  "limitations": [
+    "The frozen endpoint files represent a rolling last-24-hour view, not a long historical archive.",
+    "The active spacecraft changes during the sample; spacecraft identity remains visible in every paired row.",
+    "The measurements are upstream of Earth. No propagation delay is applied when they are compared with daily geomagnetic context.",
+    "The paired records are a descriptive compilation, not a causal analysis, storm forecast, or instrument validation.",
+    "Daily summaries cover only the sampled minutes and are explicitly marked partial when they do not contain all 1,440 UTC minutes.",
+    "Estimated planetary Kp is a separate three-hour/day product and is included only as completed daily context.",
+    "Missing input values remain null; source quality fields are preserved without a new interpretation."
+  ],
+  "record_count": 2,
+  "records": [
+    {
+      "bz_gsm_southward_fraction": 0.40811,
+      "coverage_fraction_of_utc_day": 0.51389,
+      "coverage_status": "partial_utc_day",
+      "date_utc": "2026-11-02",
+      "end_time_tag": "2026-11-02T23:58:00",
+      "expected_minutes_in_utc_day": 1440,
+      "matched_active_minutes": 740,
+      "planetary_kp_context": {
+        "available_3h_intervals": 8,
+        "complete_day": true,
+        "estimated": true,
+        "max": 3.0,
+        "mean": 1.625,
+        "source_id": "SRC-144"
+      },
+      "source_sample_counts": {
+        "ACE": 267,
+        "SOLAR1": 473
+      },
+      "start_time_tag": "2026-11-02T06:12:00",
+      "statistics": {
+        "bz_gsm_nT": {
+          "max": 4.14,
+          "mean": 0.3583,
+          "median": 0.63,
+          "min": -4.53,
+          "valid_count": 740
+        },
+        "proton_density_cm3": {
+          "max": 18.61,
+          "mean": 1.92991,
+          "median": 1.69,
+          "min": 0.82,
+          "valid_count": 738
+        },
+        "proton_speed_km_s": {
+          "max": 511.21,
+          "mean": 411.61732,
+          "median": 400.6,
+          "min": 376.3,
+          "valid_count": 738
+        },
+        "proton_temperature_K": {
+          "max": 270366.0,
+          "mean": 106461.02168,
+          "median": 101483.0,
+          "min": 30294.0,
+          "valid_count": 738
+        }
+      },
+      "time_tag_timezone": "UTC"
+    },
+    {
+      "bz_gsm_southward_fraction": 0.42268,
+      "coverage_fraction_of_utc_day": 0.20208,
+      "coverage_status": "partial_utc_day",
+      "date_utc": "2026-11-03",
+      "end_time_tag": "2026-11-03T06:04:00",
+      "expected_minutes_in_utc_day": 1440,
+      "matched_active_minutes": 291,
+      "planetary_kp_context": {
+        "available_3h_intervals": 1,
+        "complete_day": false,
+        "estimated": true,
+        "max": null,
+        "mean": null,
+        "source_id": "SRC-144"
+      },
+      "source_sample_counts": {
+        "SOLAR1": 291
+      },
+      "start_time_tag": "2026-11-03T00:01:00",
+      "statistics": {
+        "bz_gsm_nT": {
+          "max": 4.47,
+          "mean": 0.56395,
+          "median": 0.41,
+          "min": -4.37,
+          "valid_count": 291
+        },
+        "proton_density_cm3": {
+          "max": 2.13,
+          "mean": 1.49395,
+          "median": 1.53,
+          "min": 0.83,
+          "valid_count": 291
+        },
+        "proton_speed_km_s": {
+          "max": 410.4,
+          "mean": 396.88007,
+          "median": 398.0,
+          "min": 377.7,
+          "valid_count": 291
+        },
+        "proton_temperature_K": {
+          "max": 108376.0,
+          "mean": 73318.31959,
+          "median": 69866.0,
+          "min": 50251.0,
+          "valid_count": 291
+        }
+      },
+      "time_tag_timezone": "UTC"
+    }
+  ],
+  "schema": "signal-atlas.daily-context.v1",
+  "source_ids": [
+    "SRC-145",
+    "SRC-146",
+    "SRC-144"
+  ]
+}

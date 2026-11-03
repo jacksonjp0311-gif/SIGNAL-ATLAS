@@ -1,0 +1,89 @@
+{
+  "atlas_version": "0.7",
+  "computed_observations": {
+    "dates_at_planetary_kp_max": [
+      "2026-10-10"
+    ],
+    "days_with_planetary_kp_max_at_least_5": 3,
+    "f107_max_sfu": 137,
+    "f107_min_sfu": 89,
+    "planetary_kp_daily_max": 7.0
+  },
+  "created_on": "2026-11-03",
+  "dataset_registry": {
+    "path": "data/dataset_registry.json",
+    "sha256": "bb9880c3e0d9573a4602cd9e70856932b19894430424df2aa09c6d7394409ae4"
+  },
+  "datasets": [
+    {
+      "dataset_id": "DS-F107-2026-11-02",
+      "file": "data/datasets/noaa_f107_30day_2026-11-02.json",
+      "rows": 30,
+      "source_ids": [
+        "SRC-116"
+      ]
+    },
+    {
+      "dataset_id": "DS-GEOMAG-2026-11-03",
+      "file": "data/datasets/noaa_daily_geomagnetic_2026-11-03.json",
+      "rows": 30,
+      "source_ids": [
+        "SRC-144"
+      ]
+    },
+    {
+      "dataset_id": "DS-SPACEWEATHER-JOIN-2026-11-03",
+      "file": "data/datasets/noaa_f107_kp_daily_join_2026-11-03.json",
+      "rows": 29,
+      "source_ids": [
+        "SRC-116",
+        "SRC-144"
+      ]
+    }
+  ],
+  "interpretation_limits": [
+    "This is a date-label join, not an assertion that daily measurements occurred at the same instant.",
+    "The F10.7 time tags do not include a timezone suffix in the retained v0.6 snapshot; no timezone conversion is applied.",
+    "The 2026-11-03 geomagnetic row is incomplete and is not included in the daily comparison.",
+    "Planetary Kp is estimated and each daily maximum summarizes eight three-hour values.",
+    "The short observational window supports descriptive exploration only, not causal attribution or a solar-activity forecast."
+  ],
+  "method": {
+    "daily_summary": "Maximum and arithmetic mean of the eight estimated planetary Kp values.",
+    "incomplete_rows": "Excluded from the complete daily join; retained in normalized raw geomagnetic data.",
+    "join_key": "F10.7 time_tag date prefix (YYYY-MM-DD) equals geomagnetic row date."
+  },
+  "packet_id": "PACKET-SWPC-SPACEWEATHER-2026-11-03",
+  "packet_sha256": "79e11c7eebc59867f2da9fdb59a31999b52f72e94345869bc15fde3f1fdbc1fe",
+  "provenance": {
+    "path": "data/provenance/release_v07_sources.jsonl",
+    "records": [
+      "PROV-001",
+      "PROV-002"
+    ],
+    "sha256": "014fcab713159099a5523e61ef9846a0560cf775ca7c71629d896d58a401b65f"
+  },
+  "reuse_notes": [
+    "Keep estimated planetary Kp distinct from the F10.7 radio-flux value; their scales and physical meanings differ.",
+    "Describe this short window; do not infer causal effects or make a forecast from this packet.",
+    "This collection is a dated sample, not the complete NOAA historical archive."
+  ],
+  "schema": "signal-atlas-research-packet.v0.7",
+  "source_records": [
+    {
+      "id": "SRC-116",
+      "url": "https://services.swpc.noaa.gov/products/10cm-flux-30-day.json"
+    },
+    {
+      "id": "SRC-144",
+      "url": "https://services.swpc.noaa.gov/text/daily-geomagnetic-indices.txt"
+    }
+  ],
+  "summary": "A date-keyed descriptive join contains 29 complete daily matches from 2026-10-05 through 2026-11-02.",
+  "topic": "NOAA F10.7 solar radio flux and estimated planetary Kp",
+  "window": {
+    "end": "2026-11-02",
+    "matched_days": 29,
+    "start": "2026-10-05"
+  }
+}

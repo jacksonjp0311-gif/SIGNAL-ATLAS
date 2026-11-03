@@ -1,0 +1,90 @@
+{
+  "schema": "signal-atlas-research-packet/0.4",
+  "atlas_version": "0.4",
+  "query": "sampling",
+  "retrieval_method": "bounded title/topic/summary metadata rank; not web or PDF full text",
+  "index_sha256": "f237add903f664c7afc9e8836977b77ed85cdb71c7f650264ef4adec5e87d252",
+  "sources": [
+    {
+      "id": "SRC-086",
+      "title": "A survey on sampling recovery",
+      "publisher": "arXiv (preprint repository)",
+      "country": "International",
+      "domain": "science",
+      "url": "https://arxiv.org/abs/2601.08787",
+      "summary": "Mathematical survey of recovery from discrete samples, sparse approximation and greedy methods.",
+      "rights": "CC BY 4.0",
+      "review_status": "metadata-and-rights-checked",
+      "time_scope": "2026-01-13",
+      "checked_at": "2026-11-02",
+      "review_scope": "official metadata and visible license link checked"
+    },
+    {
+      "id": "SRC-047",
+      "title": "MIT Signals and Systems — Video Lectures",
+      "publisher": "MIT OpenCourseWare",
+      "country": "International",
+      "domain": "education",
+      "url": "https://live.ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/video_galleries/video-lectures/",
+      "summary": "26 videos spanning linear systems, Fourier transforms, filtering, sampling, modulation and feedback; linked for lawful study.",
+      "rights": "link-only; full-text reuse not assessed",
+      "review_status": "landing-page-checked",
+      "time_scope": "2011",
+      "checked_at": "2026-11-02",
+      "review_scope": "landing page metadata and described material; not a full technical/rights audit"
+    },
+    {
+      "id": "SRC-048",
+      "title": "MIT 6.003 Signals and Systems — Lecture Notes",
+      "publisher": "MIT OpenCourseWare",
+      "country": "International",
+      "domain": "education",
+      "url": "https://ocw.mit.edu/courses/6-003-signals-and-systems-fall-2011/pages/lecture-notes/",
+      "summary": "University lecture-note catalog for transforms, sampling, communications, and frequency response; hosted PDFs not mirrored.",
+      "rights": "link-only; full-text reuse not assessed",
+      "review_status": "landing-page-checked",
+      "time_scope": "2011",
+      "checked_at": "2026-11-02",
+      "review_scope": "landing page metadata and described material; not a full technical/rights audit"
+    }
+  ],
+  "claims_attributed_to_sources": [
+    {
+      "id": "C-025",
+      "claim": "MIT OCW organizes video lectures and lecture notes covering Fourier analysis, filtering, sampling, modulation, and linear systems.",
+      "evidence_status": "source-attributed",
+      "matched_source_ids": [
+        "SRC-047",
+        "SRC-048"
+      ],
+      "all_claim_source_ids": [
+        "SRC-047",
+        "SRC-048"
+      ],
+      "partial_evidence_selection": false
+    },
+    {
+      "id": "C-042",
+      "claim": "A method that samples below a naive Nyquist rate may require additional assumptions, such as spectral sparsity or a constrained signal model; it does not repeal the sampling theorem.",
+      "evidence_status": "source-attributed / candidate-science",
+      "matched_source_ids": [
+        "SRC-086"
+      ],
+      "all_claim_source_ids": [
+        "SRC-086",
+        "SRC-091"
+      ],
+      "partial_evidence_selection": true
+    }
+  ],
+  "candidate_notes_excluded_by_default": true,
+  "candidate_notes": [],
+  "unresolved": [],
+  "caveats": [
+    "Source URLs may be stale since their last review.",
+    "Source cards summarize externally hosted material and do not contain that material.",
+    "Source self-description is not independent verification.",
+    "Payload size is not an inference cost measurement."
+  ],
+  "packet_sha256": "75c42847f0e68161a0c0092d3b72716402359c2b21851fef62cbd52ffe06354b"
+}

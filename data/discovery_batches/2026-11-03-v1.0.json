@@ -1,0 +1,33 @@
+{
+  "batch_id": "SIGNAL-ATLAS-v1.0-2026-11-03",
+  "checked_at": "2026-11-03",
+  "claim_ids": [
+    "C-077",
+    "C-078",
+    "C-079",
+    "C-080",
+    "C-081",
+    "C-082"
+  ],
+  "dataset_ids": [
+    "DS-GOES-XRS-PRIMARY-6H-2026-11-03",
+    "DS-GOES-XRS-PAIRED-2026-11-03"
+  ],
+  "limitations": [
+    "History descriptions remain publisher-attributed.",
+    "GOES is a short rolling capture.",
+    "No unmeasured causal relation or prediction is inferred."
+  ],
+  "note_ids": [
+    "NOTE-023"
+  ],
+  "purpose": "Add public-history routes and a frozen GOES X-ray snapshot; unify navigation and coverage.",
+  "release_version": "1.0",
+  "source_ids": [
+    "SRC-148",
+    "SRC-149",
+    "SRC-150",
+    "SRC-151",
+    "SRC-152"
+  ]
+}

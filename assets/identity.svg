@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 500" role="img" aria-label="SIGNAL ATLAS: a wave and evidence-map cover identity"><title>SIGNAL ATLAS: a wave and evidence-map cover identity</title>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#06111f"/><stop offset="1" stop-color="#12273a"/></linearGradient><pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" stroke="#214157" fill="none" stroke-width="1" opacity=".65"/></pattern><linearGradient id="sig"><stop stop-color="#f6af60"/><stop offset=".65" stop-color="#5be9d9"/><stop offset="1" stop-color="#80a9f4"/></linearGradient></defs>
+<rect width="1280" height="500" fill="url(#bg)"/><rect width="1280" height="500" fill="url(#grid)"/>
+<rect x="27" y="27" width="1226" height="446" fill="none" stroke="#478b97" stroke-width="2"/><path d="M27 85H1253 M27 418H1253" stroke="#365269" stroke-width="1"/>
+<g font-family="monospace" fill="#77c8cd"><text x="52" y="65" font-size="18" letter-spacing="3">PUBLIC RESEARCH / EDITION 0.1</text><text x="955" y="65" font-size="18">EST. 2026 / 11 / 02</text></g>
+<path d="M65 260H135 L150 225 168 295 182 164 200 330 220 250 238 245 254 205 274 284 290 245H350 l18 28 17-47 20 27H470" stroke="url(#sig)" stroke-width="5" fill="none"/>
+<g transform="translate(526 105)"><text x="0" y="118" fill="#f2f1e7" font-size="93" letter-spacing="4" font-weight="900" font-family="Arial, Helvetica, sans-serif">SIGNAL</text><text x="0" y="215" fill="#f4ad60" font-size="106" letter-spacing="6" font-weight="900" font-family="Arial, Helvetica, sans-serif">ATLAS</text><path d="M0 245H630" stroke="#5be9d9" stroke-width="3"/><text x="0" y="277" fill="#92c6d4" font-size="19" letter-spacing="4" font-family="monospace">SPECTRUM / SIGINT / WORLD ATLAS</text></g>
+<g stroke="#f4ad60" fill="none" stroke-width="2" opacity=".9"><rect x="65" y="128" width="390" height="247"/><path d="M65 149H455 M85 128V375 M435 128V375"/></g>
+<g fill="#93cbd0" font-family="monospace" font-size="14"><text x="55" y="447">HUMAN + AGENT NAVIGATION</text><text x="894" y="447">TRACEABLE • DATED • REVIEWABLE</text></g>
+</svg>

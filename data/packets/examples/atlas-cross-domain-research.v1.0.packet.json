@@ -1,0 +1,64 @@
+{
+  "filters": {
+    "kind": "dataset"
+  },
+  "inputs": {
+    "index_path": "data/unified_search_index_v10.json",
+    "index_sha256": "8d225bd40aa88b938da8d7d38da70ebbf001478fcb5db6df62e9b766ecd210db",
+    "manifest_path": "data/unified_search_manifest_v10.json",
+    "manifest_sha256": "85aa6ece0168c5a369999d00828f97e75d11914c1059541aa8cc1061ac50a629"
+  },
+  "limitations": [
+    "Lexical metadata retrieval, not full-text or semantic search.",
+    "A matching record does not independently verify its source.",
+    "Snapshot windows are short and cross-product matches do not establish causality."
+  ],
+  "method": "Deterministic local lexical search; all query terms must occur; no live network, embeddings, or LLM ranking.",
+  "packet_id": "ATLAS-QUERY-GOES-XRAY-2026-11-03",
+  "packet_sha256": "ffc6d0dd36ff4e417f3408d1157268b057857fda2f340ec2346d4e84fc0f25fb",
+  "query": "GOES X-ray flux",
+  "release_version": "1.0",
+  "results": [
+    {
+      "country": "International",
+      "data_kind": "observed",
+      "dataset_ids": [
+        "DS-GOES-XRS-PRIMARY-6H-2026-11-03"
+      ],
+      "date_end": "2026-11-03",
+      "date_start": "2026-11-03",
+      "domain": "science",
+      "id": "DS-GOES-XRS-PRIMARY-6H-2026-11-03",
+      "kind": "dataset",
+      "path": "data/datasets/noaa_goes_primary_xrays_6hour_2026-11-03.json",
+      "score": 18,
+      "source_ids": [
+        "SRC-152"
+      ],
+      "summary": "716 raw rows; two band labels; captured 2026-11-03T06:43:15Z.",
+      "title": "NOAA primary GOES soft X-ray flux, frozen six-hour observation snapshot",
+      "url": null
+    },
+    {
+      "country": "International",
+      "data_kind": "derived",
+      "dataset_ids": [
+        "DS-GOES-XRS-PAIRED-2026-11-03"
+      ],
+      "date_end": "2026-11-03",
+      "date_start": "2026-11-03",
+      "domain": "science",
+      "id": "DS-GOES-XRS-PAIRED-2026-11-03",
+      "kind": "dataset",
+      "path": "data/datasets/noaa_goes_primary_xrays_6hour_paired_2026-11-03.json",
+      "score": 18,
+      "source_ids": [
+        "SRC-152"
+      ],
+      "summary": "One row per exact timestamp and satellite match containing both bands; no cross-instrument or causal join.",
+      "title": "NOAA primary GOES X-ray flux, exact timestamp and satellite channel pairs",
+      "url": null
+    }
+  ],
+  "schema_version": "1.0"
+}

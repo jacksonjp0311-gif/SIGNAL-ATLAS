@@ -1,0 +1,272 @@
+{
+  "counts": {
+    "claims": 82,
+    "datasets": 10,
+    "lessons": 30,
+    "notes": 21,
+    "publications": 26,
+    "search_documents": 134,
+    "sources": 150,
+    "svg_graphics": 31
+  },
+  "dataset_kind_counts": {
+    "derived": 4,
+    "observed": 5,
+    "synthetic": 1
+  },
+  "datasets": [
+    {
+      "dataset_id": "DS-F107-2026-11-02",
+      "date_end": "2026-11-02",
+      "date_start": "2026-10-04",
+      "files": [
+        {
+          "path": "data/datasets/noaa_f107_30day_2026-11-02.json",
+          "sha256": "30553983bd2a9156d2864083c3166e46f75a10f1632d3ad98052b8585f27636e"
+        }
+      ],
+      "kind": "observed",
+      "record_count": 30,
+      "source_ids": [
+        "SRC-116"
+      ],
+      "title": "NOAA 10.7 cm solar radio flux, dated 30-day snapshot"
+    },
+    {
+      "dataset_id": "DS-GEOMAG-2026-11-03",
+      "date_end": "2026-11-03",
+      "date_start": "2026-10-05",
+      "files": [
+        {
+          "path": "data/datasets/noaa_daily_geomagnetic_2026-11-03.txt",
+          "sha256": "b9819192d02d2f415f72ac7ba4ea48e071c905ae82a742d46ee58151e551a79b"
+        },
+        {
+          "path": "data/datasets/noaa_daily_geomagnetic_2026-11-03.json",
+          "sha256": "045a84d28db6f766733dfc83db48787aa1f249d3b4051e1d74f19465a147e1c0"
+        }
+      ],
+      "kind": "observed",
+      "record_count": 30,
+      "source_ids": [
+        "SRC-144"
+      ],
+      "title": "NOAA SWPC daily geomagnetic indices, dated 30-day snapshot"
+    },
+    {
+      "dataset_id": "DS-GOES-XRS-PAIRED-2026-11-03",
+      "date_end": "2026-11-03",
+      "date_start": "2026-11-03",
+      "files": [
+        {
+          "path": "data/datasets/noaa_goes_primary_xrays_6hour_paired_2026-11-03.json",
+          "sha256": "6cffcc6dad4937e7d99da85bc93ec3df704813f220f3f41e30b0192597c5f306"
+        },
+        {
+          "path": "data/datasets/noaa_goes_primary_xrays_6hour_paired_2026-11-03.csv",
+          "sha256": "92306df30f39745841b664275c353d00cdaa19bd721e632302ca662312756421"
+        }
+      ],
+      "kind": "derived",
+      "record_count": 358,
+      "source_ids": [
+        "SRC-152"
+      ],
+      "title": "NOAA primary GOES X-ray flux, exact timestamp and satellite channel pairs"
+    },
+    {
+      "dataset_id": "DS-GOES-XRS-PRIMARY-6H-2026-11-03",
+      "date_end": "2026-11-03",
+      "date_start": "2026-11-03",
+      "files": [
+        {
+          "path": "data/datasets/noaa_goes_primary_xrays_6hour_2026-11-03.json",
+          "sha256": "e8e289be79d1734bb2e5cca7613d4924c4a45e3a77dcf61897782b984c47e23f"
+        },
+        {
+          "path": "data/datasets/noaa_goes_primary_xrays_6hour_2026-11-03.metadata.json",
+          "sha256": "7f306c7dbab8f28f4c6e415849efb9ea91101707a6b91f7c3bda2f791b66edc5"
+        }
+      ],
+      "kind": "observed",
+      "record_count": 716,
+      "source_ids": [
+        "SRC-152"
+      ],
+      "title": "NOAA primary GOES soft X-ray flux, frozen six-hour observation snapshot"
+    },
+    {
+      "dataset_id": "DS-RTSW-DAILY-CONTEXT-2026-11-03",
+      "date_end": "2026-11-03",
+      "date_start": "2026-11-02",
+      "files": [
+        {
+          "path": "data/datasets/noaa_rtsw_daily_context_2026-11-03.json",
+          "sha256": "2913daef3ad2b127c337f1c58de4cff45a97b4e9f8e32f7bb23649a134037052"
+        },
+        {
+          "path": "data/datasets/noaa_rtsw_daily_context_2026-11-03.csv",
+          "sha256": "0f54f4736029bd48f73367817a02f3709a8dd576050d35d138f5d88825b908c5"
+        }
+      ],
+      "kind": "derived",
+      "record_count": 2,
+      "source_ids": [
+        "SRC-145",
+        "SRC-146",
+        "SRC-144"
+      ],
+      "title": "Partial UTC-day solar-wind and geomagnetic context"
+    },
+    {
+      "dataset_id": "DS-RTSW-MAG-2026-11-03",
+      "date_end": "2026-11-03",
+      "date_start": "2026-11-02",
+      "files": [
+        {
+          "path": "data/datasets/noaa_rtsw_mag_1m_2026-11-03.json",
+          "sha256": "9b849aac5a24f9440d71b0cf5b59c7f0d4aaa5ba676cc552815c90e0ff4eec04"
+        },
+        {
+          "path": "data/datasets/noaa_rtsw_mag_1m_active_2026-11-03.json",
+          "sha256": "78a3eca6bf03d3c45625062bf549c16910e486f725f5ae872862e52aa21133df"
+        },
+        {
+          "path": "data/datasets/noaa_rtsw_snapshot_metadata_2026-11-03.json",
+          "sha256": "319aab2c87d7af24966d1aa4a219de149c427cc9fab65aae13ae75946670f79c"
+        }
+      ],
+      "kind": "observed",
+      "record_count": 3432,
+      "source_ids": [
+        "SRC-146"
+      ],
+      "title": "NOAA SWPC real-time solar-wind magnetic-field snapshot"
+    },
+    {
+      "dataset_id": "DS-RTSW-PAIRED-2026-11-03",
+      "date_end": "2026-11-03",
+      "date_start": "2026-11-02",
+      "files": [
+        {
+          "path": "data/datasets/noaa_rtsw_active_paired_1m_2026-11-03.json",
+          "sha256": "2fb9a76fb0a0962ccfdfb1cf04ffcd4a245b74146c970a98700eca1f40724f3d"
+        },
+        {
+          "path": "data/datasets/noaa_rtsw_active_paired_1m_2026-11-03.csv",
+          "sha256": "6c489cb37079cd45fdcc24ab58df74c9ced259de7864ab187c0c4c8039ac803a"
+        },
+        {
+          "path": "assets/solar_wind_rtsw_v08.svg",
+          "sha256": "2995978df6dc9dcc44cf1af0fc34f308cfc699229036bafd6a8dd437474bf2c2"
+        }
+      ],
+      "kind": "derived",
+      "record_count": 1031,
+      "source_ids": [
+        "SRC-145",
+        "SRC-146"
+      ],
+      "title": "NOAA SWPC active-source paired solar-wind series"
+    },
+    {
+      "dataset_id": "DS-RTSW-PLASMA-2026-11-03",
+      "date_end": "2026-11-03",
+      "date_start": "2026-11-02",
+      "files": [
+        {
+          "path": "data/datasets/noaa_rtsw_wind_1m_2026-11-03.json",
+          "sha256": "fcf00f33e4e8bacd855743b0c33add5279d55faec68c7d072c905fbcae3961d3"
+        },
+        {
+          "path": "data/datasets/noaa_rtsw_wind_1m_active_2026-11-03.json",
+          "sha256": "afa8e5883f34749e7a4729baf2af26f4332805c08e4fcff3c7f240679e28368b"
+        },
+        {
+          "path": "data/datasets/noaa_rtsw_snapshot_metadata_2026-11-03.json",
+          "sha256": "319aab2c87d7af24966d1aa4a219de149c427cc9fab65aae13ae75946670f79c"
+        }
+      ],
+      "kind": "observed",
+      "record_count": 3247,
+      "source_ids": [
+        "SRC-145"
+      ],
+      "title": "NOAA SWPC real-time solar-wind proton plasma snapshot"
+    },
+    {
+      "dataset_id": "DS-SPACEWEATHER-JOIN-2026-11-03",
+      "date_end": "2026-11-02",
+      "date_start": "2026-10-05",
+      "files": [
+        {
+          "path": "data/datasets/noaa_f107_kp_daily_join_2026-11-03.json",
+          "sha256": "2d752ce61a3333e17af0c343c9f478befe5e584594e40763a48a0b60998a2b08"
+        },
+        {
+          "path": "data/datasets/noaa_f107_kp_daily_join_2026-11-03.csv",
+          "sha256": "f42902f26469da49539dabb454b17a9c88325d118b541bb322adf08ee669aedb"
+        },
+        {
+          "path": "assets/space_weather_f107_kp_v07.svg",
+          "sha256": "6f5ce37c10fe66bf30e39df9f7510598e2780452717c07cae2a298ac9edb465d"
+        }
+      ],
+      "kind": "derived",
+      "record_count": 29,
+      "source_ids": [
+        "SRC-116",
+        "SRC-144"
+      ],
+      "title": "Date-keyed F10.7 and estimated planetary Kp daily comparison"
+    },
+    {
+      "dataset_id": "DS-SYNTHETIC-FREQUENCY-STABILITY-V06",
+      "date_end": null,
+      "date_start": null,
+      "files": [
+        {
+          "path": "data/experiments/frequency_stability_v06.json",
+          "sha256": "4a7c6ab6aaf8604a95fde88b44f6aafe3481bbeec9bea814f2aa9c63976558b6"
+        }
+      ],
+      "kind": "synthetic",
+      "record_count": null,
+      "source_ids": [],
+      "title": "Frequency stability teaching series"
+    }
+  ],
+  "gaps": [
+    {
+      "detail": "The GOES addition is one rolling six-hour capture. Prior one-minute wind and daily products cover different windows.",
+      "title": "No continuous archive"
+    },
+    {
+      "detail": "Daily F10.7 and estimated Kp, minute-scale solar wind, and GOES X-rays are not interchangeable. Joins need an explicit key and purpose.",
+      "title": "Different quantities and time supports"
+    },
+    {
+      "detail": "26 publication records and a few public history routes do not measure field-wide or archival completeness.",
+      "title": "Selective history and science coverage"
+    },
+    {
+      "detail": "Search covers bundled metadata and selected Markdown; it does not index remote pages or PDF full text or judge truth.",
+      "title": "Lexical search limits"
+    }
+  ],
+  "release_version": "1.0",
+  "report_date": "2026-11-03",
+  "source_domain_counts": {
+    "applications": 2,
+    "education": 3,
+    "history": 17,
+    "law": 9,
+    "military": 42,
+    "military-history": 8,
+    "research": 7,
+    "research-method": 1,
+    "science": 39,
+    "spectrum": 9,
+    "technology": 13
+  }
+}

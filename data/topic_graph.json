@@ -1,0 +1,192 @@
+{
+  "schema": "signal-atlas-topic-graph/v0.6",
+  "version": "0.6",
+  "nodes": [
+    {
+      "id": "topic:rf-physics",
+      "label": "RF physics",
+      "summary": "Waves, units, propagation and physical constraints",
+      "sources": [
+        "SRC-114"
+      ],
+      "lessons": [
+        "14-wave-physics-and-spectrum.md",
+        "21-observational-solar-radio-flux.md"
+      ]
+    },
+    {
+      "id": "topic:fourier",
+      "label": "Fourier & sampling",
+      "summary": "Frequency-domain analysis and aliasing",
+      "sources": [
+        "SRC-135"
+      ],
+      "lessons": [
+        "15-fourier-sampling-and-noise.md"
+      ]
+    },
+    {
+      "id": "topic:measurement",
+      "label": "Measurement provenance",
+      "summary": "Sample-rate, calibration, uncertainty and meaning",
+      "sources": [
+        "SRC-006"
+      ],
+      "lessons": [
+        "23-calibration-and-source-assumptions.md",
+        "24-research-packet-integrity.md"
+      ]
+    },
+    {
+      "id": "topic:radar",
+      "label": "Radar & remote sensing",
+      "summary": "Weather sensing and synthetic aperture radar products",
+      "sources": [
+        "SRC-118",
+        "SRC-133"
+      ],
+      "lessons": [
+        "22-sar-phase-and-intensity.md"
+      ]
+    },
+    {
+      "id": "topic:radio-astronomy",
+      "label": "Radio interferometry",
+      "summary": "Measurements, beamforming, calibration and imaging",
+      "sources": [
+        "SRC-130"
+      ],
+      "lessons": [
+        "23-calibration-and-source-assumptions.md"
+      ]
+    },
+    {
+      "id": "topic:world-history",
+      "label": "Worldwide public SIGINT history",
+      "summary": "Archives, doctrine, organizational claims and boundaries",
+      "sources": [
+        "SRC-121",
+        "SRC-124"
+      ],
+      "lessons": [
+        "12_global_archive_research_lab.md"
+      ]
+    },
+    {
+      "id": "topic:oversight",
+      "label": "Oversight & public institutions",
+      "summary": "Independent oversight is different from institutional self-report",
+      "sources": [
+        "SRC-125"
+      ],
+      "lessons": [
+        "08-doctrine-oversight-and-ethics.md"
+      ]
+    },
+    {
+      "id": "topic:research-reuse",
+      "label": "Research Amortization",
+      "summary": "Versioned, small, cited packets: reuse with preserved uncertainty",
+      "sources": [
+        "SRC-006"
+      ],
+      "lessons": [
+        "24-research-packet-integrity.md"
+      ]
+    },
+    {
+      "id": "topic:frequency-stability",
+      "label": "Frequency stability & metrology",
+      "summary": "Reference definitions, measurement stability, calibration context and uncertainty",
+      "sources": [
+        "SRC-136",
+        "SRC-137",
+        "SRC-138",
+        "SRC-139"
+      ],
+      "lessons": [
+        "25-frequency-stability-and-measurement.md"
+      ]
+    },
+    {
+      "id": "topic:public-records",
+      "label": "Public SIGINT records & archives",
+      "summary": "Finding aids, release indexes, institutional histories and item-level provenance",
+      "sources": [
+        "SRC-030",
+        "SRC-066",
+        "SRC-107",
+        "SRC-140",
+        "SRC-141",
+        "SRC-142",
+        "SRC-143"
+      ],
+      "lessons": [
+        "26-public-records-and-source-criticism.md"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "topic:rf-physics",
+      "to": "topic:radar",
+      "relation": "physical basis"
+    },
+    {
+      "from": "topic:rf-physics",
+      "to": "topic:fourier",
+      "relation": "waveform representation"
+    },
+    {
+      "from": "topic:fourier",
+      "to": "topic:measurement",
+      "relation": "sample context"
+    },
+    {
+      "from": "topic:measurement",
+      "to": "topic:radio-astronomy",
+      "relation": "calibration"
+    },
+    {
+      "from": "topic:measurement",
+      "to": "topic:radar",
+      "relation": "information retention"
+    },
+    {
+      "from": "topic:measurement",
+      "to": "topic:research-reuse",
+      "relation": "evidence integrity"
+    },
+    {
+      "from": "topic:world-history",
+      "to": "topic:oversight",
+      "relation": "authority vs scrutiny"
+    },
+    {
+      "from": "topic:research-reuse",
+      "to": "topic:world-history",
+      "relation": "time-scoped sources"
+    },
+    {
+      "from": "topic:measurement",
+      "to": "topic:frequency-stability",
+      "relation": "stability versus accuracy"
+    },
+    {
+      "from": "topic:world-history",
+      "to": "topic:public-records",
+      "relation": "finding aids and dated evidence"
+    },
+    {
+      "from": "topic:public-records",
+      "to": "topic:oversight",
+      "relation": "institutional record and independent scrutiny"
+    },
+    {
+      "from": "topic:research-reuse",
+      "to": "topic:public-records",
+      "relation": "provenance-preserving retrieval"
+    }
+  ],
+  "notes": "Concept navigation graph, not discovered causality, learned weights or validated ontology. v0.6 adds two navigational topics; edges describe editorial learning paths, not causal or discovered relations."
+}

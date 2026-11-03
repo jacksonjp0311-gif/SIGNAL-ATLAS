@@ -1,0 +1,326 @@
+{
+  "atlas_version": "1.0",
+  "datasets": [
+    {
+      "dataset_id": "DS-F107-2026-11-02",
+      "date_end": "2026-11-02",
+      "date_start": "2026-10-04",
+      "files": [
+        {
+          "format": "json",
+          "path": "data/datasets/noaa_f107_30day_2026-11-02.json",
+          "sha256": "30553983bd2a9156d2864083c3166e46f75a10f1632d3ad98052b8585f27636e"
+        }
+      ],
+      "kind": "observed",
+      "provenance_record": "Retained in v0.6; see the v0.6 dataset notes.",
+      "record_count": 30,
+      "source_ids": [
+        "SRC-116"
+      ],
+      "title": "NOAA 10.7 cm solar radio flux, dated 30-day snapshot",
+      "units": "solar flux units (sfu)",
+      "value": "F10.7 flux"
+    },
+    {
+      "complete_day_count": 29,
+      "data_character": "The planetary Kp values are NOAA estimates computed from ground-magnetometer data.",
+      "dataset_id": "DS-GEOMAG-2026-11-03",
+      "date_end": "2026-11-03",
+      "date_start": "2026-10-05",
+      "files": [
+        {
+          "format": "text",
+          "path": "data/datasets/noaa_daily_geomagnetic_2026-11-03.txt",
+          "sha256": "b9819192d02d2f415f72ac7ba4ea48e071c905ae82a742d46ee58151e551a79b"
+        },
+        {
+          "format": "json",
+          "path": "data/datasets/noaa_daily_geomagnetic_2026-11-03.json",
+          "sha256": "045a84d28db6f766733dfc83db48787aa1f249d3b4051e1d74f19465a147e1c0"
+        }
+      ],
+      "kind": "observed",
+      "partial_day_count": 1,
+      "provenance_record": "PROV-001",
+      "record_count": 30,
+      "source_ids": [
+        "SRC-144"
+      ],
+      "title": "NOAA SWPC daily geomagnetic indices, dated 30-day snapshot",
+      "units": "indices; Kp is dimensionless",
+      "value": "middle/high latitude A and K, estimated planetary A and eight Kp values per date"
+    },
+    {
+      "data_character": "One row per exact timestamp and satellite match containing both bands; no cross-instrument or causal join.",
+      "dataset_id": "DS-GOES-XRS-PAIRED-2026-11-03",
+      "date_end": "2026-11-03",
+      "date_start": "2026-11-03",
+      "files": [
+        {
+          "format": "json",
+          "path": "data/datasets/noaa_goes_primary_xrays_6hour_paired_2026-11-03.json",
+          "role": "exact channel pairing",
+          "sha256": "6cffcc6dad4937e7d99da85bc93ec3df704813f220f3f41e30b0192597c5f306"
+        },
+        {
+          "format": "csv",
+          "path": "data/datasets/noaa_goes_primary_xrays_6hour_paired_2026-11-03.csv",
+          "role": "tabular exact channel pairing",
+          "sha256": "92306df30f39745841b664275c353d00cdaa19bd721e632302ca662312756421"
+        }
+      ],
+      "kind": "derived",
+      "provenance_record": "data/provenance/release_v10_sources.jsonl:PROV-V10-NOAA-XRS-PAIR",
+      "record_count": 358,
+      "source_ids": [
+        "SRC-152"
+      ],
+      "title": "NOAA primary GOES X-ray flux, exact timestamp and satellite channel pairs",
+      "units": "W m^-2; raw and observed flux fields remain separate"
+    },
+    {
+      "data_character": "716 raw rows; two band labels; captured 2026-11-03T06:43:15Z.",
+      "dataset_id": "DS-GOES-XRS-PRIMARY-6H-2026-11-03",
+      "date_end": "2026-11-03",
+      "date_start": "2026-11-03",
+      "files": [
+        {
+          "format": "json",
+          "path": "data/datasets/noaa_goes_primary_xrays_6hour_2026-11-03.json",
+          "role": "raw upstream payload",
+          "sha256": "e8e289be79d1734bb2e5cca7613d4924c4a45e3a77dcf61897782b984c47e23f"
+        },
+        {
+          "format": "json",
+          "path": "data/datasets/noaa_goes_primary_xrays_6hour_2026-11-03.metadata.json",
+          "role": "capture integrity metadata",
+          "sha256": "7f306c7dbab8f28f4c6e415849efb9ea91101707a6b91f7c3bda2f791b66edc5"
+        }
+      ],
+      "kind": "observed",
+      "provenance_record": "data/provenance/release_v10_sources.jsonl:PROV-V10-NOAA-XRS-RAW",
+      "record_count": 716,
+      "source_ids": [
+        "SRC-152"
+      ],
+      "title": "NOAA primary GOES soft X-ray flux, frozen six-hour observation snapshot",
+      "units": "W m^-2 in the provider flux fields; original field names retained"
+    },
+    {
+      "data_character": "Coverage-counted daily summaries of the paired series with completed daily Kp shown only as separate context.",
+      "dataset_id": "DS-RTSW-DAILY-CONTEXT-2026-11-03",
+      "date_end": "2026-11-03",
+      "date_start": "2026-11-02",
+      "files": [
+        {
+          "format": "json",
+          "path": "data/datasets/noaa_rtsw_daily_context_2026-11-03.json",
+          "sha256": "2913daef3ad2b127c337f1c58de4cff45a97b4e9f8e32f7bb23649a134037052"
+        },
+        {
+          "format": "csv",
+          "path": "data/datasets/noaa_rtsw_daily_context_2026-11-03.csv",
+          "sha256": "0f54f4736029bd48f73367817a02f3709a8dd576050d35d138f5d88825b908c5"
+        }
+      ],
+      "kind": "derived",
+      "limitations": [
+        "Every UTC-day bucket in this rolling 24-hour capture is partial.",
+        "Kp is a separate daily context product with a different cadence; no propagation lag is applied."
+      ],
+      "provenance_record": "PROV-006",
+      "record_count": 2,
+      "source_ids": [
+        "SRC-145",
+        "SRC-146",
+        "SRC-144"
+      ],
+      "title": "Partial UTC-day solar-wind and geomagnetic context",
+      "units": {
+        "Kp": "estimated dimensionless index; 3-hour intervals"
+      }
+    },
+    {
+      "active_record_count": 1243,
+      "data_character": "One-minute in-situ interplanetary magnetic-field components; the raw endpoint response includes all available spacecraft.",
+      "dataset_id": "DS-RTSW-MAG-2026-11-03",
+      "date_end": "2026-11-03",
+      "date_start": "2026-11-02",
+      "files": [
+        {
+          "format": "json",
+          "path": "data/datasets/noaa_rtsw_mag_1m_2026-11-03.json",
+          "sha256": "9b849aac5a24f9440d71b0cf5b59c7f0d4aaa5ba676cc552815c90e0ff4eec04"
+        },
+        {
+          "format": "json",
+          "path": "data/datasets/noaa_rtsw_mag_1m_active_2026-11-03.json",
+          "sha256": "78a3eca6bf03d3c45625062bf549c16910e486f725f5ae872862e52aa21133df"
+        },
+        {
+          "format": "json",
+          "path": "data/datasets/noaa_rtsw_snapshot_metadata_2026-11-03.json",
+          "sha256": "319aab2c87d7af24966d1aa4a219de149c427cc9fab65aae13ae75946670f79c"
+        }
+      ],
+      "kind": "observed",
+      "provenance_record": "PROV-004",
+      "record_count": 3432,
+      "source_ids": [
+        "SRC-146"
+      ],
+      "title": "NOAA SWPC real-time solar-wind magnetic-field snapshot",
+      "units": {
+        "bt": "nT",
+        "bx_gsm": "nT",
+        "by_gsm": "nT",
+        "bz_gsm": "nT"
+      }
+    },
+    {
+      "data_character": "Paired 1-minute plasma and magnetic-field records, joined by exact source and time tag.",
+      "dataset_id": "DS-RTSW-PAIRED-2026-11-03",
+      "date_end": "2026-11-03",
+      "date_start": "2026-11-02",
+      "files": [
+        {
+          "format": "json",
+          "path": "data/datasets/noaa_rtsw_active_paired_1m_2026-11-03.json",
+          "sha256": "2fb9a76fb0a0962ccfdfb1cf04ffcd4a245b74146c970a98700eca1f40724f3d"
+        },
+        {
+          "format": "csv",
+          "path": "data/datasets/noaa_rtsw_active_paired_1m_2026-11-03.csv",
+          "sha256": "6c489cb37079cd45fdcc24ab58df74c9ced259de7864ab187c0c4c8039ac803a"
+        },
+        {
+          "format": "svg",
+          "path": "assets/solar_wind_rtsw_v08.svg",
+          "sha256": "2995978df6dc9dcc44cf1af0fc34f308cfc699229036bafd6a8dd437474bf2c2"
+        }
+      ],
+      "kind": "derived",
+      "limitations": [
+        "The frozen endpoint files represent a rolling last-24-hour view, not a long historical archive.",
+        "The active spacecraft changes during the sample; spacecraft identity remains visible in every paired row.",
+        "The measurements are upstream of Earth. No propagation delay is applied when they are compared with daily geomagnetic context.",
+        "The paired records are a descriptive compilation, not a causal analysis, storm forecast, or instrument validation.",
+        "Daily summaries cover only the sampled minutes and are explicitly marked partial when they do not contain all 1,440 UTC minutes.",
+        "Estimated planetary Kp is a separate three-hour/day product and is included only as completed daily context.",
+        "Missing input values remain null; source quality fields are preserved without a new interpretation."
+      ],
+      "provenance_record": "PROV-005",
+      "record_count": 1031,
+      "source_ids": [
+        "SRC-145",
+        "SRC-146"
+      ],
+      "title": "NOAA SWPC active-source paired solar-wind series",
+      "units": {
+        "density": "cm^-3",
+        "magnetic_field": "nT",
+        "speed": "km/s",
+        "temperature": "K"
+      }
+    },
+    {
+      "active_record_count": 1085,
+      "data_character": "One-minute in-situ proton speed, density, and temperature; the raw endpoint response includes all available spacecraft.",
+      "dataset_id": "DS-RTSW-PLASMA-2026-11-03",
+      "date_end": "2026-11-03",
+      "date_start": "2026-11-02",
+      "files": [
+        {
+          "format": "json",
+          "path": "data/datasets/noaa_rtsw_wind_1m_2026-11-03.json",
+          "sha256": "fcf00f33e4e8bacd855743b0c33add5279d55faec68c7d072c905fbcae3961d3"
+        },
+        {
+          "format": "json",
+          "path": "data/datasets/noaa_rtsw_wind_1m_active_2026-11-03.json",
+          "sha256": "afa8e5883f34749e7a4729baf2af26f4332805c08e4fcff3c7f240679e28368b"
+        },
+        {
+          "format": "json",
+          "path": "data/datasets/noaa_rtsw_snapshot_metadata_2026-11-03.json",
+          "sha256": "319aab2c87d7af24966d1aa4a219de149c427cc9fab65aae13ae75946670f79c"
+        }
+      ],
+      "kind": "observed",
+      "provenance_record": "PROV-003",
+      "record_count": 3247,
+      "source_ids": [
+        "SRC-145"
+      ],
+      "title": "NOAA SWPC real-time solar-wind proton plasma snapshot",
+      "units": {
+        "proton_density": "cm^-3",
+        "proton_speed": "km/s",
+        "proton_temperature": "K"
+      }
+    },
+    {
+      "data_character": "Date-keyed combination and daily summaries derived from the two observed inputs.",
+      "dataset_id": "DS-SPACEWEATHER-JOIN-2026-11-03",
+      "date_end": "2026-11-02",
+      "date_start": "2026-10-05",
+      "files": [
+        {
+          "format": "json",
+          "path": "data/datasets/noaa_f107_kp_daily_join_2026-11-03.json",
+          "sha256": "2d752ce61a3333e17af0c343c9f478befe5e584594e40763a48a0b60998a2b08"
+        },
+        {
+          "format": "csv",
+          "path": "data/datasets/noaa_f107_kp_daily_join_2026-11-03.csv",
+          "sha256": "f42902f26469da49539dabb454b17a9c88325d118b541bb322adf08ee669aedb"
+        },
+        {
+          "format": "svg",
+          "path": "assets/space_weather_f107_kp_v07.svg",
+          "sha256": "6f5ce37c10fe66bf30e39df9f7510598e2780452717c07cae2a298ac9edb465d"
+        }
+      ],
+      "kind": "derived",
+      "limitations": [
+        "This is a date-label join, not an assertion that daily measurements occurred at the same instant.",
+        "The F10.7 time tags do not include a timezone suffix in the retained v0.6 snapshot; no timezone conversion is applied.",
+        "The 2026-11-03 geomagnetic row is incomplete and is not included in the daily comparison.",
+        "Planetary Kp is estimated and each daily maximum summarizes eight three-hour values.",
+        "The short observational window supports descriptive exploration only, not causal attribution or a solar-activity forecast."
+      ],
+      "provenance_record": "PROV-002",
+      "record_count": 29,
+      "source_ids": [
+        "SRC-116",
+        "SRC-144"
+      ],
+      "title": "Date-keyed F10.7 and estimated planetary Kp daily comparison",
+      "units": {
+        "F10.7": "sfu",
+        "Kp": "dimensionless index"
+      },
+      "value": "F10.7, planetary A, eight three-hour estimated planetary Kp values, daily Kp mean and max"
+    },
+    {
+      "data_character": "Teaching series only; not field measurements.",
+      "dataset_id": "DS-SYNTHETIC-FREQUENCY-STABILITY-V06",
+      "files": [
+        {
+          "format": "json",
+          "path": "data/experiments/frequency_stability_v06.json",
+          "sha256": "4a7c6ab6aaf8604a95fde88b44f6aafe3481bbeec9bea814f2aa9c63976558b6"
+        }
+      ],
+      "kind": "synthetic",
+      "provenance_record": "Authored teaching data retained from v0.6.",
+      "record_count": null,
+      "source_ids": [],
+      "title": "Frequency stability teaching series",
+      "units": "fractional frequency"
+    }
+  ],
+  "schema": "signal-atlas.dataset-registry.v1",
+  "scope": "Canonical observed, derived, and synthetic series highlighted in the Atlas data pipeline; this does not reclassify the source catalog as a dataset list."
+}

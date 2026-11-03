@@ -1,0 +1,234 @@
+{
+  "version": "0.5",
+  "benchmark": "Author-curated 20-query offline lexical retrieval diagnostic",
+  "limitations": "Not blind, not a representative held-out sample, no LLMs, no websites queried at evaluation time. Does not measure actual answer faithfulness, model compute, or full-text RAG accuracy.",
+  "queries": [
+    {
+      "query": "solar radio emissions",
+      "expected_id": "SRC-114",
+      "hit_at_5": true,
+      "returned_ids": [
+        "SRC-114"
+      ],
+      "packet_bytes": 1789,
+      "citation_integrity": true,
+      "checksum_pass": true
+    },
+    {
+      "query": "30-day solar flux",
+      "expected_id": "SRC-116",
+      "hit_at_5": true,
+      "returned_ids": [
+        "SRC-116"
+      ],
+      "packet_bytes": 1778,
+      "citation_integrity": true,
+      "checksum_pass": true
+    },
+    {
+      "query": "Sentinel-1 phase radar",
+      "expected_id": "SRC-118",
+      "hit_at_5": true,
+      "returned_ids": [
+        "SRC-118"
+      ],
+      "packet_bytes": 1826,
+      "citation_integrity": true,
+      "checksum_pass": true
+    },
+    {
+      "query": "Finnish military intelligence",
+      "expected_id": "SRC-121",
+      "hit_at_5": true,
+      "returned_ids": [
+        "SRC-121",
+        "SRC-123",
+        "SRC-122"
+      ],
+      "packet_bytes": 3281,
+      "citation_integrity": true,
+      "checksum_pass": true
+    },
+    {
+      "query": "New Zealand annual oversight",
+      "expected_id": "SRC-125",
+      "hit_at_5": true,
+      "returned_ids": [
+        "SRC-125",
+        "SRC-126"
+      ],
+      "packet_bytes": 2563,
+      "citation_integrity": true,
+      "checksum_pass": true
+    },
+    {
+      "query": "Brazil ABIN history",
+      "expected_id": "SRC-127",
+      "hit_at_5": true,
+      "returned_ids": [
+        "SRC-127"
+      ],
+      "packet_bytes": 1803,
+      "citation_integrity": true,
+      "checksum_pass": true
+    },
+    {
+      "query": "Japan electromagnetic domain",
+      "expected_id": "SRC-124",
+      "hit_at_5": true,
+      "returned_ids": [
+        "SRC-124"
+      ],
+      "packet_bytes": 1813,
+      "citation_integrity": true,
+      "checksum_pass": true
+    },
+    {
+      "query": "Smirnov Jones formalism",
+      "expected_id": "SRC-130",
+      "hit_at_5": true,
+      "returned_ids": [
+        "SRC-130"
+      ],
+      "packet_bytes": 1780,
+      "citation_integrity": true,
+      "checksum_pass": true
+    },
+    {
+      "query": "GNU Radio tutorials",
+      "expected_id": "SRC-005",
+      "hit_at_5": true,
+      "returned_ids": [
+        "SRC-005"
+      ],
+      "packet_bytes": 1503,
+      "citation_integrity": true,
+      "checksum_pass": true
+    },
+    {
+      "query": "SigMF metadata",
+      "expected_id": "SRC-006",
+      "hit_at_5": true,
+      "returned_ids": [
+        "SRC-006",
+        "SRC-035"
+      ],
+      "packet_bytes": 2198,
+      "citation_integrity": true,
+      "checksum_pass": true
+    },
+    {
+      "query": "South Africa defence annual report",
+      "expected_id": "SRC-129",
+      "hit_at_5": true,
+      "returned_ids": [
+        "SRC-129"
+      ],
+      "packet_bytes": 1872,
+      "citation_integrity": true,
+      "checksum_pass": true
+    },
+    {
+      "query": "interferometer calibration",
+      "expected_id": "SRC-131",
+      "hit_at_5": false,
+      "returned_ids": [],
+      "packet_bytes": 832,
+      "citation_integrity": true,
+      "checksum_pass": true
+    },
+    {
+      "query": "radar precipitation echoes",
+      "expected_id": "SRC-134",
+      "hit_at_5": false,
+      "returned_ids": [],
+      "packet_bytes": 832,
+      "citation_integrity": true,
+      "checksum_pass": true
+    },
+    {
+      "query": "SAR phase amplitude loss",
+      "expected_id": "SRC-118",
+      "hit_at_5": false,
+      "returned_ids": [],
+      "packet_bytes": 830,
+      "citation_integrity": true,
+      "checksum_pass": true
+    },
+    {
+      "query": "Finnish espionage agency history",
+      "expected_id": "SRC-123",
+      "hit_at_5": false,
+      "returned_ids": [],
+      "packet_bytes": 838,
+      "citation_integrity": true,
+      "checksum_pass": true
+    },
+    {
+      "query": "solar quiet sun flux",
+      "expected_id": "SRC-114",
+      "hit_at_5": false,
+      "returned_ids": [],
+      "packet_bytes": 826,
+      "citation_integrity": true,
+      "checksum_pass": true
+    },
+    {
+      "query": "NOAA weather profiler hardware",
+      "expected_id": "SRC-133",
+      "hit_at_5": false,
+      "returned_ids": [],
+      "packet_bytes": 836,
+      "citation_integrity": true,
+      "checksum_pass": true
+    },
+    {
+      "query": "Brazil military signal interception",
+      "expected_id": "SRC-128",
+      "hit_at_5": false,
+      "returned_ids": [],
+      "packet_bytes": 841,
+      "citation_integrity": true,
+      "checksum_pass": true
+    },
+    {
+      "query": "Japanese frequency management",
+      "expected_id": "SRC-124",
+      "hit_at_5": true,
+      "returned_ids": [
+        "SRC-124"
+      ],
+      "packet_bytes": 1814,
+      "citation_integrity": true,
+      "checksum_pass": true
+    },
+    {
+      "query": "radio astronomy calibration",
+      "expected_id": "SRC-130",
+      "hit_at_5": true,
+      "returned_ids": [
+        "SRC-105",
+        "SRC-106",
+        "SRC-130"
+      ],
+      "packet_bytes": 3356,
+      "citation_integrity": true,
+      "checksum_pass": true
+    }
+  ],
+  "total": 20,
+  "hit_at_5": 13,
+  "misses": [
+    "interferometer calibration",
+    "radar precipitation echoes",
+    "SAR phase amplitude loss",
+    "Finnish espionage agency history",
+    "solar quiet sun flux",
+    "NOAA weather profiler hardware",
+    "Brazil military signal interception"
+  ],
+  "citation_integrity_count": 20,
+  "mean_packet_bytes": 1661,
+  "full_catalog_jsonl_bytes": 98038,
+  "metadata_payload_reduction_vs_loading_full_catalog_pct": 98.31
+}

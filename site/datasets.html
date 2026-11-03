@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Signal Atlas — Data Explorer</title>
+<style>
+:root{--bg:#0b1220;--panel:#131e30;--ink:#f5f7fb;--muted:#a6b7cc;--cyan:#48d9e8;--gold:#ffbd59;--line:#27364b}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Segoe UI,Arial,sans-serif}
+main{max-width:1180px;margin:auto;padding:28px}a{color:var(--cyan)}header{display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.kicker{color:var(--gold);text-transform:uppercase;letter-spacing:.12em;font-size:.8rem}h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.1;margin:.25rem 0}p{max-width:80ch;color:var(--muted)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px;margin:18px 0}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px}.stat{padding:14px;background:#0e1726;border-radius:12px}.stat strong{display:block;color:var(--cyan);font-size:1.3rem}
+img{display:block;width:100%;height:auto;border-radius:12px}.table-wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:620px}th,td{padding:9px 12px;border-bottom:1px solid var(--line);text-align:left}th{color:var(--cyan);position:sticky;top:0;background:var(--panel)}input{max-width:420px;width:100%;padding:10px 12px;border-radius:8px;border:1px solid var(--line);background:#0e1726;color:var(--ink)}
+.links{display:flex;gap:12px;flex-wrap:wrap}.note{border-left:3px solid var(--gold);padding:10px 14px;color:var(--muted)}.back{white-space:nowrap}
+</style>
+</head>
+<body>
+<main>
+<header><div><div class="kicker">Signal Atlas · observed data collection · v0.7</div><h1>Data Explorer</h1><p>Follow two public NOAA measurement feeds from frozen input files through a date-keyed table, a teaching chart, and a machine-readable research packet.</p></div><a class="back" href="index.html">Back to the Atlas</a></header>
+<section class="card stats" aria-label="Dataset summary">
+<div class="stat"><strong>29</strong>complete matched dates</div>
+<div class="stat"><strong>2026-10-05</strong>first joined date</div>
+<div class="stat"><strong>2026-11-02</strong>last joined date</div>
+<div class="stat"><strong>3</strong>days with estimated daily Kp maximum at or above 5</div>
+</section>
+<section class="card"><h2>Compare without mixing scales</h2><p>F10.7 is shown in solar flux units; planetary Kp is an estimated geomagnetic index. Separate panels retain their different units and meanings.</p><img src="../assets/space_weather_f107_kp_v07.svg" alt="Two-panel chart comparing daily NOAA F10.7 solar flux and estimated planetary Kp maximum for matched dates."></section>
+<section class="card"><h2>Daily joined values</h2><label for="filter">Filter rows by date or event</label><p><input id="filter" type="search" placeholder="For example: 2026-10-10 or Kp 5+"></p>
+<div class="table-wrap"><table><caption>Daily date-keyed NOAA SWPC F10.7 and estimated planetary Kp summary</caption><thead><tr><th scope="col">Date label</th><th scope="col">F10.7 (sfu)</th><th scope="col">Kp mean</th><th scope="col">Kp max</th><th scope="col">Threshold summary</th></tr></thead><tbody><tr data-date="2026-10-05"><td>2026-10-05</td><td>100</td><td>3.62</td><td>5.33</td><td>Kp 5+ reached</td></tr>
+<tr data-date="2026-10-06"><td>2026-10-06</td><td>113</td><td>2.46</td><td>3.00</td><td>below 5</td></tr>
+<tr data-date="2026-10-07"><td>2026-10-07</td><td>114</td><td>1.38</td><td>2.67</td><td>below 5</td></tr>
+<tr data-date="2026-10-08"><td>2026-10-08</td><td>119</td><td>1.54</td><td>2.00</td><td>below 5</td></tr>
+<tr data-date="2026-10-09"><td>2026-10-09</td><td>121</td><td>2.33</td><td>4.00</td><td>below 5</td></tr>
+<tr data-date="2026-10-10"><td>2026-10-10</td><td>126</td><td>4.12</td><td>7.00</td><td>Kp 5+ reached</td></tr>
+<tr data-date="2026-10-11"><td>2026-10-11</td><td>122</td><td>2.67</td><td>4.00</td><td>below 5</td></tr>
+<tr data-date="2026-10-12"><td>2026-10-12</td><td>123</td><td>1.75</td><td>3.33</td><td>below 5</td></tr>
+<tr data-date="2026-10-13"><td>2026-10-13</td><td>136</td><td>2.67</td><td>3.33</td><td>below 5</td></tr>
+<tr data-date="2026-10-14"><td>2026-10-14</td><td>123</td><td>2.38</td><td>3.33</td><td>below 5</td></tr>
+<tr data-date="2026-10-15"><td>2026-10-15</td><td>126</td><td>2.17</td><td>3.00</td><td>below 5</td></tr>
+<tr data-date="2026-10-16"><td>2026-10-16</td><td>131</td><td>2.54</td><td>3.67</td><td>below 5</td></tr>
+<tr data-date="2026-10-17"><td>2026-10-17</td><td>132</td><td>1.46</td><td>3.00</td><td>below 5</td></tr>
+<tr data-date="2026-10-18"><td>2026-10-18</td><td>137</td><td>1.46</td><td>2.33</td><td>below 5</td></tr>
+<tr data-date="2026-10-19"><td>2026-10-19</td><td>121</td><td>0.50</td><td>1.00</td><td>below 5</td></tr>
+<tr data-date="2026-10-20"><td>2026-10-20</td><td>121</td><td>1.92</td><td>3.00</td><td>below 5</td></tr>
+<tr data-date="2026-10-21"><td>2026-10-21</td><td>115</td><td>3.17</td><td>4.67</td><td>below 5</td></tr>
+<tr data-date="2026-10-22"><td>2026-10-22</td><td>106</td><td>3.42</td><td>4.33</td><td>below 5</td></tr>
+<tr data-date="2026-10-23"><td>2026-10-23</td><td>101</td><td>2.33</td><td>4.33</td><td>below 5</td></tr>
+<tr data-date="2026-10-24"><td>2026-10-24</td><td>93</td><td>1.46</td><td>2.00</td><td>below 5</td></tr>
+<tr data-date="2026-10-25"><td>2026-10-25</td><td>89</td><td>1.42</td><td>2.00</td><td>below 5</td></tr>
+<tr data-date="2026-10-26"><td>2026-10-26</td><td>91</td><td>1.12</td><td>2.00</td><td>below 5</td></tr>
+<tr data-date="2026-10-27"><td>2026-10-27</td><td>89</td><td>1.67</td><td>2.67</td><td>below 5</td></tr>
+<tr data-date="2026-10-28"><td>2026-10-28</td><td>93</td><td>1.83</td><td>2.33</td><td>below 5</td></tr>
+<tr data-date="2026-10-29"><td>2026-10-29</td><td>89</td><td>0.83</td><td>2.33</td><td>below 5</td></tr>
+<tr data-date="2026-10-30"><td>2026-10-30</td><td>90</td><td>2.12</td><td>4.33</td><td>below 5</td></tr>
+<tr data-date="2026-10-31"><td>2026-10-31</td><td>92</td><td>3.50</td><td>6.00</td><td>Kp 5+ reached</td></tr>
+<tr data-date="2026-11-01"><td>2026-11-01</td><td>95</td><td>3.25</td><td>4.67</td><td>below 5</td></tr>
+<tr data-date="2026-11-02"><td>2026-11-02</td><td>97</td><td>1.62</td><td>3.00</td><td>below 5</td></tr></tbody></table></div></section>
+<section class="card"><h2>Open the underlying collection</h2><div class="links">
+<a href="../data/dataset_registry.json">Dataset registry (JSON)</a>
+<a href="../data/datasets/noaa_f107_30day_2026-11-02.json">F10.7 raw snapshot (JSON)</a>
+<a href="../data/datasets/noaa_daily_geomagnetic_2026-11-03.txt">Geomagnetic raw snapshot (TXT)</a>
+<a href="../data/datasets/noaa_daily_geomagnetic_2026-11-03.json">Geomagnetic normalized rows (JSON)</a>
+<a href="../data/datasets/noaa_f107_kp_daily_join_2026-11-03.json">Joined values (JSON)</a>
+<a href="../data/datasets/noaa_f107_kp_daily_join_2026-11-03.csv">Joined values (CSV)</a>
+<a href="../data/packets/examples/space-weather-noaa-2026-11-03.v0.7.packet.json">AI research packet</a>
+<a href="../docs/science/08_space_weather_observations.md">Method and interpretation guide</a>
+<a href="../courses/27_space_weather_data_join.md">Guided lesson</a>
+</div></section>
+<section class="card note"><strong>How to read this page.</strong> The joined window uses the date prefix from each F10.7 time tag and the date printed in the geomagnetic file. It does not shift timestamps or imply the two measurements occurred at the same instant. The current-day geomagnetic row is partial and excluded from the complete daily join. Co-variation is descriptive; this package does not claim that solar radio flux caused a geomagnetic change.</section>
+<footer><p>Original data products: <a href="https://services.swpc.noaa.gov/products/10cm-flux-30-day.json">NOAA SWPC F10.7 feed</a> and <a href="https://services.swpc.noaa.gov/text/daily-geomagnetic-indices.txt">NOAA SWPC daily geomagnetic feed</a>. This page is generated offline by the v0.7 build tool.</p></footer>
+<section class="card" id="v08-solar-wind"><h2>One-minute solar-wind observations</h2><p>Open the <a href="solar_wind.html">v0.8 Solar-wind Explorer</a> for paired plasma and magnetic-field measurements, source switching, and partial-day coverage.</p></section>
+</main>
+<script>
+const filter=document.getElementById("filter");
+filter.addEventListener("input",()=>{const q=filter.value.toLowerCase();for(const row of document.querySelectorAll("tbody tr"))row.hidden=!row.textContent.toLowerCase().includes(q)});
+</script>
+</body>
+</html>

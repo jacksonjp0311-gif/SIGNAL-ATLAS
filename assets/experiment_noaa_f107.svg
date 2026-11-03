@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="720" viewBox="0 0 1400 720" role="img">
+<title>NOAA F10.7 solar radio flux observed values during 2026-10-04 to 2026-11-02</title>
+<desc>Thirty daily values in solar flux units vary from 89 to 137. A solid turquoise curve marks observations and dashed amber line shows trailing seven-day means. This is a real published sample, not a simulation.</desc>
+<rect width="1400" height="720" fill="#071827"/>
+<text x="72" y="86" font-size="48" fill="#f0f9f7" font-family="Arial" font-weight="bold">REAL OBSERVATIONS: SOLAR RADIO FLUX</text>
+<text x="72" y="128" font-size="23" fill="#a5c7cf" font-family="Arial">NOAA SWPC • 10.7 cm (2800 MHz) • 30 reported daily observations • units: sfu</text>
+<rect x="114" y="162" width="1224" height="445" rx="8" fill="#0f2b3b" stroke="#3b5768"/>
+<line x1="130" x2="1315" y1="542.9" y2="542.9" stroke="#426071" stroke-dasharray="4 6"/><text x="80" y="550.9" font-size="18" fill="#bbd3d5" font-family="Arial">80</text>
+<line x1="130" x2="1315" y1="488.6" y2="488.6" stroke="#426071" stroke-dasharray="4 6"/><text x="80" y="496.6" font-size="18" fill="#bbd3d5" font-family="Arial">90</text>
+<line x1="130" x2="1315" y1="434.3" y2="434.3" stroke="#426071" stroke-dasharray="4 6"/><text x="80" y="442.3" font-size="18" fill="#bbd3d5" font-family="Arial">100</text>
+<line x1="130" x2="1315" y1="380.0" y2="380.0" stroke="#426071" stroke-dasharray="4 6"/><text x="80" y="388.0" font-size="18" fill="#bbd3d5" font-family="Arial">110</text>
+<line x1="130" x2="1315" y1="325.7" y2="325.7" stroke="#426071" stroke-dasharray="4 6"/><text x="80" y="333.7" font-size="18" fill="#bbd3d5" font-family="Arial">120</text>
+<line x1="130" x2="1315" y1="271.4" y2="271.4" stroke="#426071" stroke-dasharray="4 6"/><text x="80" y="279.4" font-size="18" fill="#bbd3d5" font-family="Arial">130</text>
+<line x1="130" x2="1315" y1="217.1" y2="217.1" stroke="#426071" stroke-dasharray="4 6"/><text x="80" y="225.1" font-size="18" fill="#bbd3d5" font-family="Arial">140</text>
+<text x="130.0" y="619" text-anchor="middle" font-size="19" fill="#bbd3d5" font-family="Arial">Oct 04</text>
+<text x="416.0" y="619" text-anchor="middle" font-size="19" fill="#bbd3d5" font-family="Arial">Oct 11</text>
+<text x="702.1" y="619" text-anchor="middle" font-size="19" fill="#bbd3d5" font-family="Arial">Oct 18</text>
+<text x="988.1" y="619" text-anchor="middle" font-size="19" fill="#bbd3d5" font-family="Arial">Oct 25</text>
+<text x="1315.0" y="619" text-anchor="middle" font-size="19" fill="#bbd3d5" font-family="Arial">Nov 02</text>
+<polyline points="130.00,477.71 170.86,456.00 211.72,425.24 252.59,408.50 293.45,393.03 334.31,380.90 375.17,368.37 416.03,345.10 456.90,327.27 497.76,309.43 538.62,302.45 579.48,297.02 620.34,289.27 661.21,284.61 702.07,272.98 742.93,274.53 783.79,286.16 824.66,292.37 865.52,307.88 906.38,331.14 947.24,361.39 988.10,398.61 1028.97,421.88 1069.83,446.69 1110.69,463.76 1151.55,476.94 1192.41,485.47 1233.28,486.24 1274.14,481.59 1315.00,476.94" fill="none" stroke="#ecab69" stroke-width="5" stroke-dasharray="12 8" stroke-linejoin="round"/>
+<polyline points="130.00,477.71 170.86,434.29 211.72,363.71 252.59,358.29 293.45,331.14 334.31,320.29 375.17,293.14 416.03,314.86 456.90,309.43 497.76,238.86 538.62,309.43 579.48,293.14 620.34,266.00 661.21,260.57 702.07,233.43 742.93,320.29 783.79,320.29 824.66,352.86 865.52,401.71 906.38,428.86 947.24,472.29 988.10,494.00 1028.97,483.14 1069.83,494.00 1110.69,472.29 1151.55,494.00 1192.41,488.57 1233.28,477.71 1274.14,461.43 1315.00,450.57" fill="none" stroke="#62e3db" stroke-width="4" stroke-linejoin="round"/>
+<circle cx="130.0" cy="477.7" r="3.2" fill="#79f7ef"/>
+<circle cx="170.9" cy="434.3" r="3.2" fill="#79f7ef"/>
+<circle cx="211.7" cy="363.7" r="3.2" fill="#79f7ef"/>
+<circle cx="252.6" cy="358.3" r="3.2" fill="#79f7ef"/>
+<circle cx="293.4" cy="331.1" r="3.2" fill="#79f7ef"/>
+<circle cx="334.3" cy="320.3" r="3.2" fill="#79f7ef"/>
+<circle cx="375.2" cy="293.1" r="3.2" fill="#79f7ef"/>
+<circle cx="416.0" cy="314.9" r="3.2" fill="#79f7ef"/>
+<circle cx="456.9" cy="309.4" r="3.2" fill="#79f7ef"/>
+<circle cx="497.8" cy="238.9" r="3.2" fill="#79f7ef"/>
+<circle cx="538.6" cy="309.4" r="3.2" fill="#79f7ef"/>
+<circle cx="579.5" cy="293.1" r="3.2" fill="#79f7ef"/>
+<circle cx="620.3" cy="266.0" r="3.2" fill="#79f7ef"/>
+<circle cx="661.2" cy="260.6" r="3.2" fill="#79f7ef"/>
+<circle cx="702.1" cy="233.4" r="3.2" fill="#79f7ef"/>
+<circle cx="742.9" cy="320.3" r="3.2" fill="#79f7ef"/>
+<circle cx="783.8" cy="320.3" r="3.2" fill="#79f7ef"/>
+<circle cx="824.7" cy="352.9" r="3.2" fill="#79f7ef"/>
+<circle cx="865.5" cy="401.7" r="3.2" fill="#79f7ef"/>
+<circle cx="906.4" cy="428.9" r="3.2" fill="#79f7ef"/>
+<circle cx="947.2" cy="472.3" r="3.2" fill="#79f7ef"/>
+<circle cx="988.1" cy="494.0" r="3.2" fill="#79f7ef"/>
+<circle cx="1029.0" cy="483.1" r="3.2" fill="#79f7ef"/>
+<circle cx="1069.8" cy="494.0" r="3.2" fill="#79f7ef"/>
+<circle cx="1110.7" cy="472.3" r="3.2" fill="#79f7ef"/>
+<circle cx="1151.6" cy="494.0" r="3.2" fill="#79f7ef"/>
+<circle cx="1192.4" cy="488.6" r="3.2" fill="#79f7ef"/>
+<circle cx="1233.3" cy="477.7" r="3.2" fill="#79f7ef"/>
+<circle cx="1274.1" cy="461.4" r="3.2" fill="#79f7ef"/>
+<circle cx="1315.0" cy="450.6" r="3.2" fill="#79f7ef"/>
+<circle cx="920" cy="670" r="5" fill="#62e3db"/><text x="937" y="678" font-size="19" fill="#d7efec" font-family="Arial">daily observations</text>
+<line x1="1140" x2="1175" y1="671" y2="671" stroke="#ecab69" stroke-width="4" stroke-dasharray="8 5"/><text x="1185" y="678" font-size="18" fill="#d7efec" font-family="Arial">7-day mean</text>
+<text x="75" y="678" font-size="18" fill="#9bc8cc" font-family="Arial">Source: services.swpc.noaa.gov/products/10cm-flux-30-day.json (frozen sample)</text></svg>

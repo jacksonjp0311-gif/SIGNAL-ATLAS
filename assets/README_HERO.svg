@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 440" width="1600" height="440" role="img"><title>SIGNAL ATLAS research edition 0.5 banner</title><desc>Original dark blue banner with a stylized electromagnetic waveform and globe; research cycle reads discover, verify, connect, teach, reuse.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#071523"/><stop offset=".55" stop-color="#0b2c3c"/><stop offset="1" stop-color="#071321"/></linearGradient>
+<linearGradient id="signal"><stop stop-color="#42e6dc"/><stop offset=".55" stop-color="#7fe8ff"/><stop offset="1" stop-color="#fcb573"/></linearGradient>
+<radialGradient id="flare"><stop stop-color="#24cddd" stop-opacity=".37"/><stop offset="1" stop-color="#24cddd" stop-opacity="0"/></radialGradient>
+<pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M42 0H0V42" stroke="#6aa1b5" opacity=".12" fill="none"/></pattern></defs>
+<rect width="1600" height="440" rx="22" fill="url(#bg)"/><rect width="1600" height="440" rx="22" fill="url(#grid)"/>
+<circle cx="1270" cy="182" r="255" fill="url(#flare)"/><g opacity=".85" stroke="#43b6bb" fill="none">
+<circle cx="1258" cy="214" r="125"/><ellipse cx="1258" cy="214" rx="125" ry="32"/><ellipse cx="1258" cy="214" rx="55" ry="125"/><path d="M1133 214H1383M1258 89V339"/>
+<path d="M1122 148Q1258 98 1394 148M1122 280Q1258 330 1394 280" opacity=".5"/></g>
+<path d="M1045 246L1159 217L1205 238L1240 140L1277 283L1310 210L1362 191L1468 245" fill="none" stroke="url(#signal)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<g stroke="#4fe5e2" stroke-width="2" fill="none" opacity=".56"><path d="M1100 337q150-110 300 0"/><path d="M1040 353q210-155 420 0"/><path d="M1170 359q90-70 180 0"/></g>
+<text x="82" y="92" fill="#75dfd9" font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="25" letter-spacing="7">OPEN SCIENTIFIC RESEARCH • HUMAN + AGENT</text>
+<text x="76" y="209" fill="#f3faf9" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="104" letter-spacing="-3">SIGNAL</text>
+<text x="510" y="209" fill="#58e9df" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="104" letter-spacing="-3">ATLAS</text>
+<text x="82" y="280" fill="#c5d9df" font-size="28" font-family="Arial, Helvetica, sans-serif">Signals • Electromagnetic science • Public intelligence history</text>
+<path d="M83 310H1010" stroke="url(#signal)" stroke-width="3"/><text x="82" y="359" fill="#fcb573" font-size="24" font-family="Arial, Helvetica, sans-serif" letter-spacing="1">DISCOVER → VERIFY → CONNECT → TEACH → REUSE</text>
+<text x="1515" y="391" text-anchor="end" fill="#d0f0ee" font-size="24" font-weight="bold" font-family="Arial, Helvetica, sans-serif">RESEARCH EDITION 0.5</text>
+</svg>

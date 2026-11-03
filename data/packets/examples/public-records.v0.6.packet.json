@@ -1,0 +1,144 @@
+{
+  "schema": "signal-atlas-research-packet/0.6",
+  "atlas_version": "0.6",
+  "created_at": "2026-11-02",
+  "query": "public records RG 457",
+  "retrieval_method": "deterministic local metadata terms plus inspectable curator-authored phrase-to-source mappings; no network, full-text search, embedding, or model",
+  "alias_lexicon_version": "signal-atlas-query-aliases/0.6",
+  "matched_alias_concepts": [
+    {
+      "concept_id": "nara-rg457",
+      "matched_phrases": [
+        "rg 457"
+      ],
+      "mapping_basis": "NARA record group and research guide records already in the v0.5 source catalog."
+    }
+  ],
+  "input_sha256": {
+    "sources.jsonl": "2089313b37ee7c47b14ffb1582ce43cc8000bf47a733e6138881f89505f14f71",
+    "claims.jsonl": "9e5cfe427c3f4c498d3484ccc9263332465b8afcf89d94338691cf50da7083b1",
+    "query_aliases_v06.json": "20dd65cd2bc91c5769bfe5d0149612b3185bc427bb33d46d30ed2275ab50920d"
+  },
+  "sources": [
+    {
+      "id": "SRC-107",
+      "title": "NARA record group 457: NSA/CSS and predecessors",
+      "publisher": "United States National Archives",
+      "country": "United States",
+      "domain": "military",
+      "url": "https://www.archives.gov/research/guide-fed-records/groups/457.html",
+      "summary": "Historical government finding aid for NSA/CSS predecessor organizations and cryptologic records.",
+      "rights": "link-only; downstream copying not authorized by index",
+      "review_status": "source-landing-page-checked",
+      "review_scope": "official/institutional landing page checked; no full-text independent replication",
+      "time_scope": "1917-1990s",
+      "checked_at": "2026-11-02",
+      "match_reasons": [
+        {
+          "type": "curated_alias",
+          "concept_id": "nara-rg457",
+          "matched_phrases": [
+            "rg 457"
+          ]
+        }
+      ],
+      "retrieval_score": 122
+    },
+    {
+      "id": "SRC-030",
+      "title": "Records of the Central Intelligence Community",
+      "publisher": "US National Archives",
+      "country": "United States",
+      "domain": "history",
+      "url": "https://www.archives.gov/research/intelligence/nsa",
+      "summary": "National Archives guide to NSA/CSS historical records and research.",
+      "rights": "link-only; reproduction unverified",
+      "review_status": "indexed",
+      "review_scope": null,
+      "time_scope": "general",
+      "checked_at": null,
+      "match_reasons": [
+        {
+          "type": "curated_alias",
+          "concept_id": "nara-rg457",
+          "matched_phrases": [
+            "rg 457"
+          ]
+        }
+      ],
+      "retrieval_score": 119
+    }
+  ],
+  "claims_attributed_to_sources": [
+    {
+      "id": "C-014",
+      "claim": "Public US Navy archives preserve historical cryptologic and radio-intelligence records.",
+      "claim_type": "historical-record",
+      "evidence_status": "documented",
+      "review_date": "2026-11-02",
+      "matched_source_ids": [
+        "SRC-030"
+      ],
+      "all_claim_source_ids": [
+        "SRC-025",
+        "SRC-026",
+        "SRC-030"
+      ],
+      "partial_evidence_selection": true,
+      "notes": "Claims summarize what the linked source states, not a demonstration of operational effectiveness."
+    },
+    {
+      "id": "C-052",
+      "claim": "NARA has a publicly searchable archival record group describing NSA/CSS predecessor cryptologic institutions.",
+      "claim_type": "historical-finding-aid",
+      "evidence_status": "source-attributed",
+      "review_date": "2026-11-02",
+      "matched_source_ids": [
+        "SRC-030",
+        "SRC-107"
+      ],
+      "all_claim_source_ids": [
+        "SRC-107",
+        "SRC-030"
+      ],
+      "partial_evidence_selection": false,
+      "notes": "Source-level attribution; no claim that current operational capability is independently established. Some science is established knowledge, not a discovery."
+    },
+    {
+      "id": "C-073",
+      "claim": "NARA describes Record Group 457 as including records from NSA/CSS and predecessor organizations, and notes that many records were not created by NSA/CSS.",
+      "claim_type": "archival-provenance",
+      "evidence_status": "official-finding-aid-description",
+      "review_date": "2026-11-02",
+      "matched_source_ids": [
+        "SRC-030",
+        "SRC-107"
+      ],
+      "all_claim_source_ids": [
+        "SRC-030",
+        "SRC-107"
+      ],
+      "partial_evidence_selection": false,
+      "notes": "The archival description concerns custody and record-group scope; it does not establish the contents of every item."
+    }
+  ],
+  "candidate_notes_excluded_by_default": true,
+  "candidate_notes": [],
+  "unresolved": [
+    {
+      "query_terms": [
+        "public",
+        "records"
+      ],
+      "reason": "These terms were not independently resolved by the curated aliases; selected cards cover only the matched concepts."
+    }
+  ],
+  "caveats": [
+    "Source cards summarize external material and can be incomplete or stale; open the original URL.",
+    "Source self-description and archive descriptions are attributed evidence, not independent corroboration.",
+    "A claim can have only a subset of its cited sources in this bounded packet; inspect the partial-selection flag.",
+    "Aliases are editorial retrieval hints, not semantic equivalence or calibrated confidence.",
+    "A checksum establishes byte identity, not source truth, freshness, license, answer quality, or inference cost."
+  ],
+  "packet_sha256": "b30b13b8cd8b62f08c417eb0601ee4cf28f788398a11a38f8a45523ccaa00d18"
+}

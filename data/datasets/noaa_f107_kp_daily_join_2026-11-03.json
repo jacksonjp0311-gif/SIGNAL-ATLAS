@@ -1,0 +1,621 @@
+{
+  "aggregation": "For complete geomagnetic days, compute max and arithmetic mean of the eight estimated planetary Kp values. Keep the original eight values.",
+  "atlas_version": "0.7",
+  "dataset_id": "DS-SPACEWEATHER-JOIN-2026-11-03",
+  "limitations": [
+    "This is a date-label join, not an assertion that daily measurements occurred at the same instant.",
+    "The F10.7 time tags do not include a timezone suffix in the retained v0.6 snapshot; no timezone conversion is applied.",
+    "The 2026-11-03 geomagnetic row is incomplete and is not included in the daily comparison.",
+    "Planetary Kp is estimated and each daily maximum summarizes eight three-hour values.",
+    "The short observational window supports descriptive exploration only, not causal attribution or a solar-activity forecast."
+  ],
+  "match_rule": "Exact YYYY-MM-DD date-label join: first ten characters of F10.7 time_tag matched to geomagnetic row date; no timestamp shifting.",
+  "records": [
+    {
+      "complete_kp_intervals": 8,
+      "date": "2026-10-05",
+      "f107_sfu": 100,
+      "f107_time_tag": "2026-10-05T20:00:00",
+      "kp_ge_5": true,
+      "planetary_a": 24,
+      "planetary_kp_3h": [
+        4.0,
+        5.33,
+        2.33,
+        3.33,
+        2.67,
+        3.67,
+        3.67,
+        4.0
+      ],
+      "planetary_kp_max": 5.33,
+      "planetary_kp_mean": 3.625
+    },
+    {
+      "complete_kp_intervals": 8,
+      "date": "2026-10-06",
+      "f107_sfu": 113,
+      "f107_time_tag": "2026-10-06T20:00:00",
+      "kp_ge_5": false,
+      "planetary_a": 11,
+      "planetary_kp_3h": [
+        3.0,
+        3.0,
+        2.33,
+        2.67,
+        2.67,
+        1.67,
+        2.0,
+        2.33
+      ],
+      "planetary_kp_max": 3.0,
+      "planetary_kp_mean": 2.4588
+    },
+    {
+      "complete_kp_intervals": 8,
+      "date": "2026-10-07",
+      "f107_sfu": 114,
+      "f107_time_tag": "2026-10-07T20:00:00",
+      "kp_ge_5": false,
+      "planetary_a": 6,
+      "planetary_kp_3h": [
+        1.0,
+        1.33,
+        1.0,
+        0.67,
+        1.0,
+        2.67,
+        2.33,
+        1.0
+      ],
+      "planetary_kp_max": 2.67,
+      "planetary_kp_mean": 1.375
+    },
+    {
+      "complete_kp_intervals": 8,
+      "date": "2026-10-08",
+      "f107_sfu": 119,
+      "f107_time_tag": "2026-10-08T20:00:00",
+      "kp_ge_5": false,
+      "planetary_a": 6,
+      "planetary_kp_3h": [
+        1.0,
+        1.67,
+        1.0,
+        2.0,
+        2.0,
+        1.33,
+        2.0,
+        1.33
+      ],
+      "planetary_kp_max": 2.0,
+      "planetary_kp_mean": 1.5413
+    },
+    {
+      "complete_kp_intervals": 8,
+      "date": "2026-10-09",
+      "f107_sfu": 121,
+      "f107_time_tag": "2026-10-09T20:00:00",
+      "kp_ge_5": false,
+      "planetary_a": 11,
+      "planetary_kp_3h": [
+        3.33,
+        2.67,
+        2.0,
+        4.0,
+        2.0,
+        1.0,
+        1.33,
+        2.33
+      ],
+      "planetary_kp_max": 4.0,
+      "planetary_kp_mean": 2.3325
+    },
+    {
+      "complete_kp_intervals": 8,
+      "date": "2026-10-10",
+      "f107_sfu": 126,
+      "f107_time_tag": "2026-10-10T20:00:00",
+      "kp_ge_5": true,
+      "planetary_a": 46,
+      "planetary_kp_3h": [
+        2.33,
+        3.0,
+        3.0,
+        2.33,
+        3.33,
+        7.0,
+        6.67,
+        5.33
+      ],
+      "planetary_kp_max": 7.0,
+      "planetary_kp_mean": 4.1238
+    },
+    {
+      "complete_kp_intervals": 8,
+      "date": "2026-10-11",
+      "f107_sfu": 122,
+      "f107_time_tag": "2026-10-11T20:00:00",
+      "kp_ge_5": false,
+      "planetary_a": 13,
+      "planetary_kp_3h": [
+        4.0,
+        3.67,
+        2.67,
+        3.0,
+        2.33,
+        2.33,
+        1.67,
+        1.67
+      ],
+      "planetary_kp_max": 4.0,
+      "planetary_kp_mean": 2.6675
+    },
+    {
+      "complete_kp_intervals": 8,
+      "date": "2026-10-12",
+      "f107_sfu": 123,
+      "f107_time_tag": "2026-10-12T20:00:00",
+      "kp_ge_5": false,
+      "planetary_a": 7,
+      "planetary_kp_3h": [
+        1.67,
+        2.33,
+        3.33,
+        1.33,
+        0.67,
+        1.33,
+        2.0,
+        1.33
+      ],
+      "planetary_kp_max": 3.33,
+      "planetary_kp_mean": 1.7488
+    },
+    {
+      "complete_kp_intervals": 8,
+      "date": "2026-10-13",
+      "f107_sfu": 136,
+      "f107_time_tag": "2026-10-13T20:00:00",
+      "kp_ge_5": false,
+      "planetary_a": 13,
+      "planetary_kp_3h": [
+        3.33,
+        3.33,
+        2.0,
+        3.0,
+        3.0,
+        2.33,
+        3.0,
+        1.33
+      ],
+      "planetary_kp_max": 3.33,
+      "planetary_kp_mean": 2.665
+    },
+    {
+      "complete_kp_intervals": 8,
+      "date": "2026-10-14",
+      "f107_sfu": 123,
+      "f107_time_tag": "2026-10-14T20:00:00",
+      "kp_ge_5": false,
+      "planetary_a": 10,
+      "planetary_kp_3h": [
+        2.33,
+        3.33,
+        1.67,
+        2.33,
+        2.0,
+        2.0,
+        2.67,
+        2.67
+      ],
+      "planetary_kp_max": 3.33,
+      "planetary_kp_mean": 2.375
+    },
+    {
+      "complete_kp_intervals": 8,
+      "date": "2026-10-15",
+      "f107_sfu": 126,
+      "f107_time_tag": "2026-10-15T20:00:00",
+      "kp_ge_5": false,
+      "planetary_a": 9,
+      "planetary_kp_3h": [
+        2.0,
+        0.67,
+        1.33,
+        3.0,
+        2.67,
+        3.0,
+        2.33,
+        2.33
+      ],
+      "planetary_kp_max": 3.0,
+      "planetary_kp_mean": 2.1663
+    },
+    {
+      "complete_kp_intervals": 8,
+      "date": "2026-10-16",
+      "f107_sfu": 131,
+      "f107_time_tag": "2026-10-16T20:00:00",
+      "kp_ge_5": false,
+      "planetary_a": 12,
+      "planetary_kp_3h": [
+        3.33,
+        2.0,
+        1.67,
+        2.33,
+        1.67,
+        3.33,
+        3.67,
+        2.33
+      ],
+      "planetary_kp_max": 3.67,
+      "planetary_kp_mean": 2.5412
+    },
+    {
+      "complete_kp_intervals": 8,
+      "date": "2026-10-17",
+      "f107_sfu": 132,
+      "f107_time_tag": "2026-10-17T20:00:00",
+      "kp_ge_5": false,
+      "planetary_a": 6,
+      "planetary_kp_3h": [
+        2.0,
+        1.0,
+        0.67,
+        0.67,
+        0.67,
+        2.67,
+        3.0,
+        1.0
+      ],
+      "planetary_kp_max": 3.0,
+      "planetary_kp_mean": 1.46
+    },
+    {
+      "complete_kp_intervals": 8,
+      "date": "2026-10-18",
+      "f107_sfu": 137,
+      "f107_time_tag": "2026-10-18T20:00:00",
+      "kp_ge_5": false,
+      "planetary_a": 6,
+      "planetary_kp_3h": [
+        2.0,
+        2.33,
+        2.0,
+        1.67,
+        0.33,
+        1.33,
+        1.67,
+        0.33
+      ],
+      "planetary_kp_max": 2.33,
+      "planetary_kp_mean": 1.4575
+    },
+    {
+      "complete_kp_intervals": 8,
+      "date": "2026-10-19",
+      "f107_sfu": 121,
+      "f107_time_tag": "2026-10-19T20:00:00",
+      "kp_ge_5": false,
+      "planetary_a": 3,
+      "planetary_kp_3h": [
+        0.33,
+        0.33,
+        0.33,
+        1.0,
+        0.33,
+        0.33,
+        0.67,
+        0.67
+      ],
+      "planetary_kp_max": 1.0,
+      "planetary_kp_mean": 0.4988
+    },
+    {
+      "complete_kp_intervals": 8,
+      "date": "2026-10-20",
+      "f107_sfu": 121,
+      "f107_time_tag": "2026-10-20T20:00:00",
+      "kp_ge_5": false,
+      "planetary_a": 8,
+      "planetary_kp_3h": [
+        1.0,
+        1.0,
+        1.0,
+        2.0,
+        2.0,
+        2.67,
+        2.67,
+        3.0
+      ],
+      "planetary_kp_max": 3.0,
+      "planetary_kp_mean": 1.9175
+    },
+    {
+      "complete_kp_intervals": 8,
+      "date": "2026-10-21",
+      "f107_sfu": 115,
+      "f107_time_tag": "2026-10-21T20:00:00",
+      "kp_ge_5": false,
+      "planetary_a": 19,
+      "planetary_kp_3h": [
+        3.67,
+        4.0,
+        2.0,
+        2.33,
+        1.67,
+        3.33,
+        3.67,
+        4.67
+      ],
+      "planetary_kp_max": 4.67,
+      "planetary_kp_mean": 3.1675
+    },
+    {
+      "complete_kp_intervals": 8,
+      "date": "2026-10-22",
+      "f107_sfu": 106,
+      "f107_time_tag": "2026-10-22T20:00:00",
+      "kp_ge_5": false,
+      "planetary_a": 20,
+      "planetary_kp_3h": [
+        2.33,
+        3.0,
+        3.0,
+        4.33,
+        4.0,
+        3.67,
+        3.67,
+        3.33
+      ],
+      "planetary_kp_max": 4.33,
+      "planetary_kp_mean": 3.4162
+    },
+    {
+      "complete_kp_intervals": 8,
+      "date": "2026-10-23",
+      "f107_sfu": 101,
+      "f107_time_tag": "2026-10-23T20:00:00",
+      "kp_ge_5": false,
+      "planetary_a": 11,
+      "planetary_kp_3h": [
+        1.67,
+        1.67,
+        1.67,
+        2.33,
+        2.67,
+        2.67,
+        4.33,
+        1.67
+      ],
+      "planetary_kp_max": 4.33,
+      "planetary_kp_mean": 2.335
+    },
+    {
+      "complete_kp_intervals": 8,
+      "date": "2026-10-24",
+      "f107_sfu": 93,
+      "f107_time_tag": "2026-10-24T20:00:00",
+      "kp_ge_5": false,
+      "planetary_a": 5,
+      "planetary_kp_3h": [
+        2.0,
+        1.33,
+        0.67,
+        2.0,
+        1.67,
+        1.67,
+        1.67,
+        0.67
+      ],
+      "planetary_kp_max": 2.0,
+      "planetary_kp_mean": 1.46
+    },
+    {
+      "complete_kp_intervals": 8,
+      "date": "2026-10-25",
+      "f107_sfu": 89,
+      "f107_time_tag": "2026-10-25T20:00:00",
+      "kp_ge_5": false,
+      "planetary_a": 5,
+      "planetary_kp_3h": [
+        2.0,
+        1.33,
+        0.67,
+        2.0,
+        1.67,
+        1.67,
+        1.0,
+        1.0
+      ],
+      "planetary_kp_max": 2.0,
+      "planetary_kp_mean": 1.4175
+    },
+    {
+      "complete_kp_intervals": 8,
+      "date": "2026-10-26",
+      "f107_sfu": 91,
+      "f107_time_tag": "2026-10-26T20:00:00",
+      "kp_ge_5": false,
+      "planetary_a": 4,
+      "planetary_kp_3h": [
+        0.33,
+        1.0,
+        1.0,
+        2.0,
+        2.0,
+        1.33,
+        0.67,
+        0.67
+      ],
+      "planetary_kp_max": 2.0,
+      "planetary_kp_mean": 1.125
+    },
+    {
+      "complete_kp_intervals": 8,
+      "date": "2026-10-27",
+      "f107_sfu": 89,
+      "f107_time_tag": "2026-10-27T20:00:00",
+      "kp_ge_5": false,
+      "planetary_a": 6,
+      "planetary_kp_3h": [
+        1.67,
+        2.67,
+        1.67,
+        1.33,
+        2.0,
+        1.0,
+        2.0,
+        1.0
+      ],
+      "planetary_kp_max": 2.67,
+      "planetary_kp_mean": 1.6675
+    },
+    {
+      "complete_kp_intervals": 8,
+      "date": "2026-10-28",
+      "f107_sfu": 93,
+      "f107_time_tag": "2026-10-28T20:00:00",
+      "kp_ge_5": false,
+      "planetary_a": 7,
+      "planetary_kp_3h": [
+        2.33,
+        1.67,
+        2.33,
+        1.67,
+        0.67,
+        1.33,
+        2.33,
+        2.33
+      ],
+      "planetary_kp_max": 2.33,
+      "planetary_kp_mean": 1.8325
+    },
+    {
+      "complete_kp_intervals": 8,
+      "date": "2026-10-29",
+      "f107_sfu": 89,
+      "f107_time_tag": "2026-10-29T20:00:00",
+      "kp_ge_5": false,
+      "planetary_a": 4,
+      "planetary_kp_3h": [
+        1.67,
+        2.33,
+        0.67,
+        0.33,
+        0.33,
+        0.33,
+        0.33,
+        0.67
+      ],
+      "planetary_kp_max": 2.33,
+      "planetary_kp_mean": 0.8325
+    },
+    {
+      "complete_kp_intervals": 8,
+      "date": "2026-10-30",
+      "f107_sfu": 90,
+      "f107_time_tag": "2026-10-30T20:00:00",
+      "kp_ge_5": false,
+      "planetary_a": 10,
+      "planetary_kp_3h": [
+        1.67,
+        1.67,
+        2.33,
+        1.67,
+        2.33,
+        1.67,
+        1.33,
+        4.33
+      ],
+      "planetary_kp_max": 4.33,
+      "planetary_kp_mean": 2.125
+    },
+    {
+      "complete_kp_intervals": 8,
+      "date": "2026-10-31",
+      "f107_sfu": 92,
+      "f107_time_tag": "2026-10-31T20:00:00",
+      "kp_ge_5": true,
+      "planetary_a": 24,
+      "planetary_kp_3h": [
+        3.0,
+        3.0,
+        3.33,
+        3.0,
+        2.67,
+        3.33,
+        6.0,
+        3.67
+      ],
+      "planetary_kp_max": 6.0,
+      "planetary_kp_mean": 3.5
+    },
+    {
+      "complete_kp_intervals": 8,
+      "date": "2026-11-01",
+      "f107_sfu": 95,
+      "f107_time_tag": "2026-11-01T20:00:00",
+      "kp_ge_5": false,
+      "planetary_a": 19,
+      "planetary_kp_3h": [
+        4.67,
+        4.33,
+        3.33,
+        3.33,
+        3.0,
+        2.33,
+        3.0,
+        2.0
+      ],
+      "planetary_kp_max": 4.67,
+      "planetary_kp_mean": 3.2488
+    },
+    {
+      "complete_kp_intervals": 8,
+      "date": "2026-11-02",
+      "f107_sfu": 97,
+      "f107_time_tag": "2026-11-02T20:00:00",
+      "kp_ge_5": false,
+      "planetary_a": 7,
+      "planetary_kp_3h": [
+        1.0,
+        2.0,
+        3.0,
+        2.33,
+        1.67,
+        1.67,
+        1.0,
+        0.33
+      ],
+      "planetary_kp_max": 3.0,
+      "planetary_kp_mean": 1.625
+    }
+  ],
+  "schema": "signal-atlas.daily-space-weather-join.v1",
+  "source_ids": [
+    "SRC-116",
+    "SRC-144"
+  ],
+  "summary": {
+    "date_end": "2026-11-02",
+    "date_start": "2026-10-05",
+    "days_kp_ge_5": 3,
+    "f107_max_sfu": 137,
+    "f107_min_sfu": 89,
+    "planetary_kp_max": 7.0,
+    "planetary_kp_peak_dates": [
+      "2026-10-10"
+    ],
+    "record_count": 29
+  },
+  "units": {
+    "f107_sfu": "solar flux unit (sfu)",
+    "planetary_kp": "estimated planetary Kp index, dimensionless scale"
+  },
+  "window": {
+    "end": "2026-11-02",
+    "row_count": 29,
+    "start": "2026-10-05"
+  }
+}

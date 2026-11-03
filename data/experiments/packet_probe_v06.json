@@ -1,0 +1,238 @@
+{
+  "schema": "signal-atlas-retrieval-compatibility-diagnostic/0.6",
+  "comparison": "same 20 curator-authored queries and expected IDs as the stored v0.5 diagnostic",
+  "v05_receipt_sha256": "a8af654cce02dd2dd23a81b5d78e9f5e7f8c1136872c36c8eb27d1a932ca07b4",
+  "v05_hit_at_5": 13,
+  "v06_hit_at_5": 20,
+  "query_count": 20,
+  "citation_integrity": "source IDs resolve to the current canonical source catalog; packet checksums are produced by packet_query_v06.py",
+  "independence_limit": "Not a held-out evaluation. Seven v0.6 phrase mappings were authored against the exact seven known v0.5 misses and their stored expected IDs. The higher compatibility score therefore measures targeted repair on a known curator set, not generalization, answer quality, or agent improvement.",
+  "compute_limit": "No model executed. Packet byte size and retrieval hit rate do not measure end-to-end inference cost, latency, or answer faithfulness.",
+  "queries": [
+    {
+      "query": "solar radio emissions",
+      "expected_id": "SRC-114",
+      "v05_hit_at_5": true,
+      "v06_hit_at_5": true,
+      "v06_returned_ids": [
+        "SRC-114"
+      ],
+      "v06_packet_sha256": "5633ed215a33b3862749b638d342c64aefade4e0850f8dff2dd0c4c8beee3156",
+      "unresolved": []
+    },
+    {
+      "query": "30-day solar flux",
+      "expected_id": "SRC-116",
+      "v05_hit_at_5": true,
+      "v06_hit_at_5": true,
+      "v06_returned_ids": [
+        "SRC-116"
+      ],
+      "v06_packet_sha256": "36300377fa385691694902b5b0756bbcbd29895541e9806e9cb0f578d4bb3d40",
+      "unresolved": []
+    },
+    {
+      "query": "Sentinel-1 phase radar",
+      "expected_id": "SRC-118",
+      "v05_hit_at_5": true,
+      "v06_hit_at_5": true,
+      "v06_returned_ids": [
+        "SRC-118"
+      ],
+      "v06_packet_sha256": "42d6d1e57657ddcac1ca041a15a85cc3ba7fed3ef79cf2ece73a655f6bd51d3c",
+      "unresolved": []
+    },
+    {
+      "query": "Finnish military intelligence",
+      "expected_id": "SRC-121",
+      "v05_hit_at_5": true,
+      "v06_hit_at_5": true,
+      "v06_returned_ids": [
+        "SRC-121",
+        "SRC-122",
+        "SRC-123"
+      ],
+      "v06_packet_sha256": "49aa6b76cb9fe51a7c5ef512cb786700c1c9f605d312882cfe116f9fdc19334d",
+      "unresolved": []
+    },
+    {
+      "query": "New Zealand annual oversight",
+      "expected_id": "SRC-125",
+      "v05_hit_at_5": true,
+      "v06_hit_at_5": true,
+      "v06_returned_ids": [
+        "SRC-125",
+        "SRC-126"
+      ],
+      "v06_packet_sha256": "f4fba899543ac9220fd0c8778d0e2aad301f67c2df0cf97668d4819f70efaf5e",
+      "unresolved": []
+    },
+    {
+      "query": "Brazil ABIN history",
+      "expected_id": "SRC-127",
+      "v05_hit_at_5": true,
+      "v06_hit_at_5": true,
+      "v06_returned_ids": [
+        "SRC-127"
+      ],
+      "v06_packet_sha256": "59ac8e3f64b2c99a97f3e2e866e8767f58800067181a7c3ad219f4588d3f689b",
+      "unresolved": []
+    },
+    {
+      "query": "Japan electromagnetic domain",
+      "expected_id": "SRC-124",
+      "v05_hit_at_5": true,
+      "v06_hit_at_5": true,
+      "v06_returned_ids": [
+        "SRC-124"
+      ],
+      "v06_packet_sha256": "af2cd9563c58676ff518d060bcd05df229d51f9daf14d5d27bb5589ca27de29c",
+      "unresolved": []
+    },
+    {
+      "query": "Smirnov Jones formalism",
+      "expected_id": "SRC-130",
+      "v05_hit_at_5": true,
+      "v06_hit_at_5": true,
+      "v06_returned_ids": [
+        "SRC-130"
+      ],
+      "v06_packet_sha256": "a5e45f0d14d72f5520fc5ba8d6e408795f0b8e62a842c951b7b846e4971fee5c",
+      "unresolved": []
+    },
+    {
+      "query": "GNU Radio tutorials",
+      "expected_id": "SRC-005",
+      "v05_hit_at_5": true,
+      "v06_hit_at_5": true,
+      "v06_returned_ids": [
+        "SRC-005"
+      ],
+      "v06_packet_sha256": "89835d8df84fc84ab2349b5e64b8176a56c510b4576d2119e52c8124daa27fa8",
+      "unresolved": []
+    },
+    {
+      "query": "SigMF metadata",
+      "expected_id": "SRC-006",
+      "v05_hit_at_5": true,
+      "v06_hit_at_5": true,
+      "v06_returned_ids": [
+        "SRC-006",
+        "SRC-035"
+      ],
+      "v06_packet_sha256": "d583f0686ff64481ec3fa40666d28ae22a993b0b6a2eaa3d1f36b1360134e39f",
+      "unresolved": []
+    },
+    {
+      "query": "South Africa defence annual report",
+      "expected_id": "SRC-129",
+      "v05_hit_at_5": true,
+      "v06_hit_at_5": true,
+      "v06_returned_ids": [
+        "SRC-129"
+      ],
+      "v06_packet_sha256": "3d35a84062d903b64f3d1a5a48df88294446ca93e329f01a075d6168dab26eac",
+      "unresolved": []
+    },
+    {
+      "query": "interferometer calibration",
+      "expected_id": "SRC-131",
+      "v05_hit_at_5": false,
+      "v06_hit_at_5": true,
+      "v06_returned_ids": [
+        "SRC-131"
+      ],
+      "v06_packet_sha256": "9c4a7f6f4b241a85b70234e6709b3faf16636b5c5cce060aadd741a3dbd9ccac",
+      "unresolved": []
+    },
+    {
+      "query": "radar precipitation echoes",
+      "expected_id": "SRC-134",
+      "v05_hit_at_5": false,
+      "v06_hit_at_5": true,
+      "v06_returned_ids": [
+        "SRC-134"
+      ],
+      "v06_packet_sha256": "a3ae88ff6fe2c4db07a7034a1d83db3fd38a8d4104a8aab725b38338bb30c740",
+      "unresolved": []
+    },
+    {
+      "query": "SAR phase amplitude loss",
+      "expected_id": "SRC-118",
+      "v05_hit_at_5": false,
+      "v06_hit_at_5": true,
+      "v06_returned_ids": [
+        "SRC-118"
+      ],
+      "v06_packet_sha256": "3013c00589f4a5b1d0e2c6863c929f5da6016798292778ff1975660c19780dd8",
+      "unresolved": []
+    },
+    {
+      "query": "Finnish espionage agency history",
+      "expected_id": "SRC-123",
+      "v05_hit_at_5": false,
+      "v06_hit_at_5": true,
+      "v06_returned_ids": [
+        "SRC-123"
+      ],
+      "v06_packet_sha256": "695f5c5ea82539a20c487dce74622b05258c1d52d83ba435173e5e5777f8931f",
+      "unresolved": []
+    },
+    {
+      "query": "solar quiet sun flux",
+      "expected_id": "SRC-114",
+      "v05_hit_at_5": false,
+      "v06_hit_at_5": true,
+      "v06_returned_ids": [
+        "SRC-114"
+      ],
+      "v06_packet_sha256": "09d9b036d896e492078820ed5c60a6a2a4a4037896500469870f8f89c7c4bb70",
+      "unresolved": []
+    },
+    {
+      "query": "NOAA weather profiler hardware",
+      "expected_id": "SRC-133",
+      "v05_hit_at_5": false,
+      "v06_hit_at_5": true,
+      "v06_returned_ids": [
+        "SRC-133"
+      ],
+      "v06_packet_sha256": "cbaf97d8fb996ecc83236527b00ce3ab82504da5dbd4b58df67cfa017ed90016",
+      "unresolved": []
+    },
+    {
+      "query": "Brazil military signal interception",
+      "expected_id": "SRC-128",
+      "v05_hit_at_5": false,
+      "v06_hit_at_5": true,
+      "v06_returned_ids": [
+        "SRC-128"
+      ],
+      "v06_packet_sha256": "56691ed8d00b3238a5d36abd2c50d21c821d8766b9bc928870ff103e028b821b",
+      "unresolved": []
+    },
+    {
+      "query": "Japanese frequency management",
+      "expected_id": "SRC-124",
+      "v05_hit_at_5": true,
+      "v06_hit_at_5": true,
+      "v06_returned_ids": [
+        "SRC-124"
+      ],
+      "v06_packet_sha256": "773c07ca71d2bb2c1b35bda71af803cbe491a651a0fc8aecc74fb76972b8f34f",
+      "unresolved": []
+    },
+    {
+      "query": "radio astronomy calibration",
+      "expected_id": "SRC-130",
+      "v05_hit_at_5": true,
+      "v06_hit_at_5": true,
+      "v06_returned_ids": [
+        "SRC-105",
+        "SRC-130"
+      ],
+      "v06_packet_sha256": "9f0be663d593d392b730bd006c6d3ca24a206e084f5a96fa249c37f086b9451d",
+      "unresolved": []
+    }
+  ]
+}

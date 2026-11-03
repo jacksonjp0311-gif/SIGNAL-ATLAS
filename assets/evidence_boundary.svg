@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="450" viewBox="0 0 1050 450" role="img">
+<title>Evidence boundaries in Signal Atlas</title><desc id="desc">Public source record links to attributed claim and time scope. The research candidate and independent experimental result remain separate until evidence review, after which the approved reference can be updated in a later numbered release.</desc>
+<rect width="1050" height="450" rx="20" fill="#0A1A2D"/><text x="35" y="54" fill="#F0F6F9" font-family="Arial" font-size="27" font-weight="bold">EVIDENCE IS NOT INTERCHANGEABLE</text><text x="36" y="78" fill="#A8C3D1" font-family="Arial" font-size="15">A source, an assertion, a calculation, and a verified finding are different kinds of records</text>
+<g font-family="Arial" font-size="17" fill="#EDF7FC">
+ <rect x="40" y="118" width="245" height="95" rx="12" fill="#19485B" stroke="#6DC7C7"/><text x="60" y="150" font-weight="bold">SOURCE CARD</text><text x="60" y="176" font-size="14">Publisher · URL · date</text><text x="60" y="194" font-size="14">Rights · time scope</text>
+ <rect x="401" y="118" width="245" height="95" rx="12" fill="#243C5B" stroke="#86B6DE"/><text x="420" y="150" font-weight="bold">ATTRIBUTED CLAIM</text><text x="420" y="176" font-size="14">Exactly what source says</text><text x="420" y="194" font-size="14">Status and uncertainty</text>
+ <rect x="762" y="118" width="245" height="95" rx="12" fill="#23483F" stroke="#81C6A0"/><text x="780" y="150" font-weight="bold">REVIEWED RECORD</text><text x="780" y="176" font-size="14">Accepted with limits</text><text x="780" y="194" font-size="14">Versioned release</text>
+ <rect x="40" y="294" width="245" height="95" rx="12" fill="#4A3849" stroke="#CE9FC2"/><text x="60" y="326" font-weight="bold">CANDIDATE IDEA</text><text x="60" y="350" font-size="14">Prediction · falsifiability</text><text x="60" y="369" font-size="14">Not yet established</text>
+ <rect x="401" y="294" width="245" height="95" rx="12" fill="#4D3E28" stroke="#E3BE79"/><text x="420" y="326" font-weight="bold">EXPERIMENT</text><text x="420" y="350" font-size="14">Code · data · controls</text><text x="420" y="369" font-size="14">Replication context</text>
+</g>
+<g fill="none" stroke-width="3"><path d="M285 165H399" stroke="#66B5BD"/><path d="M646 165H760" stroke="#81C6A0"/><path d="M285 342H400" stroke="#E3BE79"/><path d="M646 342H883V214" stroke="#E3BE79" stroke-dasharray="8 5"/></g>
+<g font-family="Arial" fill="#B2CDD5" font-size="13"><text x="310" y="155">supports</text><text x="664" y="155">review</text><text x="293" y="328">test</text><text x="700" y="326">replicate &amp; review</text></g>
+<text x="37" y="421" font-family="Arial" fill="#9BB0C2" font-size="12">A verified simulation of established theory is not a new scientific discovery.</text>
+</svg>

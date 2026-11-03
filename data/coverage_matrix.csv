@@ -1,0 +1,19 @@
+region,institutional_mandate,public_doctrine,historical_archives,technical_research,outside_assessment,evidence_quality_note
+United States,1,0,1,0,0,Direct primary-source mission statements; military integration and historical archives.
+United Kingdom,1,1,0,0,0,Public mission and UK defense doctrine; do not infer active collection reach.
+Canada,1,0,0,0,0,"Official foreign SIGINT mandate, defense support, and legal boundaries."
+Australia,1,0,0,0,0,"Public definitions, workflow, and mission."
+New Zealand,1,0,0,0,0,Official national signals intelligence responsibility.
+Sweden,1,0,0,0,0,Official SIGINT mandate and public defense support description.
+France,1,0,0,1,0,Separate external and military public references; multi-source intelligence fusion.
+Germany,1,0,0,0,0,Official foreign intelligence PDF; accessibility and historical freshness must be reviewed.
+Israel,1,0,0,0,0,IDF self-description; historical page may be stale.
+Japan,0,0,0,0,0,Japanese official mission description and defense white paper; retain original-language attribution.
+Netherlands,0,0,0,0,0,Official public pages on the service and statutory framework; original Dutch.
+Norway,0,0,0,0,0,Official English-language foreign intelligence mandate and support role; avoid SIGINT-specific inference not in this source.
+China,0,0,0,0,1,"US government report; claims are attributed to outside assessment, not independently verified."
+Russia,0,0,0,0,1,US congressional external assessment; organizational specifics may be dated.
+NATO,0,1,0,0,0,Alliance is not a country. Official frameworks for EM warfare and intelligence fusion.
+Finland,1,1,1,0,0,"Finnish Defence Forces public 2026 review and older releases; organization self-report, no specific technical operational reach."
+Brazil,0,0,1,0,0,Civilian ABIN institutional history and mandate only; not direct military SIGINT evidence.
+South Africa,0,0,0,0,0,Public Department of Defence annual report portal; no evidence here establishing specific SIGINT technical capability.

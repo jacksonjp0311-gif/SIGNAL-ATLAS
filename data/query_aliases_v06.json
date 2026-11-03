@@ -1,0 +1,183 @@
+{
+  "schema": "signal-atlas-query-aliases/0.6",
+  "method_note": "Curator-authored phrase-to-source crosswalk for deterministic local metadata retrieval. It is not an embedding model, trained ontology, language model, or evidence that every paraphrase is equivalent.",
+  "review_date": "2026-11-02",
+  "concepts": [
+    {
+      "id": "frequency-stability",
+      "query_phrases": [
+        "frequency stability",
+        "frequency stability analysis",
+        "clock stability",
+        "oscillator stability",
+        "allan deviation",
+        "allan variance",
+        "clock drift"
+      ],
+      "source_ids": [
+        "SRC-136",
+        "SRC-138",
+        "SRC-139"
+      ],
+      "mapping_basis": "NIST titles, catalog descriptions, and reviewed terminology.",
+      "evaluation_note": "New v0.6 concept; not independently judged by a blind set."
+    },
+    {
+      "id": "si-speed-of-light",
+      "query_phrases": [
+        "speed of light",
+        "exact speed of light",
+        "meter definition",
+        "metre definition",
+        "si metre",
+        "si meter",
+        "299792458"
+      ],
+      "source_ids": [
+        "SRC-137"
+      ],
+      "mapping_basis": "NIST SI definition record."
+    },
+    {
+      "id": "nara-rg457",
+      "query_phrases": [
+        "rg 457",
+        "rg457",
+        "record group 457",
+        "nara records of nsa",
+        "national archives nsa records"
+      ],
+      "source_ids": [
+        "SRC-030",
+        "SRC-107"
+      ],
+      "mapping_basis": "NARA record group and research guide records already in the v0.5 source catalog."
+    },
+    {
+      "id": "friedman-collection",
+      "query_phrases": [
+        "william friedman papers",
+        "friedman cryptology archive",
+        "purple cipher history",
+        "friedman documents"
+      ],
+      "source_ids": [
+        "SRC-140"
+      ],
+      "mapping_basis": "NSA collection title and official collection description."
+    },
+    {
+      "id": "nsa-declassified-timeline",
+      "query_phrases": [
+        "nsa declassified timeline",
+        "nsa 60th anniversary documents",
+        "us sigint historical releases"
+      ],
+      "source_ids": [
+        "SRC-141"
+      ],
+      "mapping_basis": "NSA historical timeline index title and page description."
+    },
+    {
+      "id": "cse-history",
+      "query_phrases": [
+        "canadian sigint history",
+        "cse wartime origins",
+        "canadian cryptologic history"
+      ],
+      "source_ids": [
+        "SRC-142"
+      ],
+      "mapping_basis": "CSE institutional history page title and reviewed chronology."
+    },
+    {
+      "id": "asd-history",
+      "query_phrases": [
+        "dsb 1947",
+        "australian postwar sigint",
+        "australian signals directorate history"
+      ],
+      "source_ids": [
+        "SRC-143"
+      ],
+      "mapping_basis": "ASD official historical account title and chronology."
+    },
+    {
+      "id": "interferometer-calibration",
+      "query_phrases": [
+        "interferometer calibration",
+        "calibrating radio interferometers"
+      ],
+      "source_ids": [
+        "SRC-131"
+      ],
+      "mapping_basis": "Retrospective repair of the exact v0.5 diagnostic query whose target was SRC-131; evaluation is therefore not held out."
+    },
+    {
+      "id": "radar-precipitation",
+      "query_phrases": [
+        "radar precipitation echoes",
+        "weather radar rain echoes"
+      ],
+      "source_ids": [
+        "SRC-134"
+      ],
+      "mapping_basis": "Retrospective repair of the exact v0.5 diagnostic query whose target was SRC-134; evaluation is therefore not held out."
+    },
+    {
+      "id": "sar-information-loss",
+      "query_phrases": [
+        "sar phase amplitude loss",
+        "sar phase and amplitude information"
+      ],
+      "source_ids": [
+        "SRC-118"
+      ],
+      "mapping_basis": "Retrospective repair of the exact v0.5 diagnostic query whose target was SRC-118; evaluation is therefore not held out."
+    },
+    {
+      "id": "finnish-agency-history",
+      "query_phrases": [
+        "finnish espionage agency history",
+        "history of finnish security intelligence"
+      ],
+      "source_ids": [
+        "SRC-123"
+      ],
+      "mapping_basis": "Retrospective repair of the exact v0.5 diagnostic query whose target was SRC-123; evaluation is therefore not held out."
+    },
+    {
+      "id": "quiet-sun-flux",
+      "query_phrases": [
+        "solar quiet sun flux",
+        "quiet sun radio flux"
+      ],
+      "source_ids": [
+        "SRC-114"
+      ],
+      "mapping_basis": "Retrospective repair of the exact v0.5 diagnostic query whose target was SRC-114; evaluation is therefore not held out."
+    },
+    {
+      "id": "noaa-weather-profiler",
+      "query_phrases": [
+        "noaa weather profiler hardware",
+        "noaa profiler radar instrument"
+      ],
+      "source_ids": [
+        "SRC-133"
+      ],
+      "mapping_basis": "Retrospective repair of the exact v0.5 diagnostic query whose target was SRC-133; evaluation is therefore not held out."
+    },
+    {
+      "id": "brazil-signals-history",
+      "query_phrases": [
+        "brazil military signal interception",
+        "brazil military signals history"
+      ],
+      "source_ids": [
+        "SRC-128"
+      ],
+      "mapping_basis": "Retrospective repair of the exact v0.5 diagnostic query whose target was SRC-128; evaluation is therefore not held out."
+    }
+  ]
+}
